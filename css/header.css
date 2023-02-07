@@ -1,0 +1,194 @@
+header{
+  display: block;
+  padding: 1vh;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header:hover{
+    transition: .5s ease;
+  
+}
+.logo img{
+    margin-left: 20px;
+    width: 200px;
+}
+.nav-bar{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    line-height: 9px;
+    
+}
+.menu li{ 
+    list-style-type: none; 
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+
+}
+.menu li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu li a:hover  {
+    color: #03a9f4;
+    transition: .5s ease;
+}
+.menu li a:hover::before{
+    content: "";
+    width: 75%;
+    height: 2px;
+    background: #03a9f4;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transition: .9s ease-in-out;
+}
+.image-header img{
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+}
+.dropclick {
+  
+    background-color: black;
+    padding-top: 1px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropclick:hover, .dropclick:focus {
+    background-color: #03a9f4;
+  }
+  
+  .image-header {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown-content {
+    width: 150px;
+    right: 0px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .showProfile {display: block;}
+  .profile-content1{
+    text-align: center;
+  }
+  .profile-content1 li:hover{color: #03a9f4;}
+  .profile-content1 a {color: white; text-decoration: none;}
+  .profile-content1 a:hover {color: #03a9f4;}
+
+  .profile-content2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .profile-content2 li{
+   padding: 5px;
+}
+.profile-content2 li:hover{
+    color: #03a9f4;
+}
+.profile-content2{
+  cursor: default;
+}
+#menu_scrolling{
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.sidepanel  {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidepanel .closebtn{
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+.side-panel-menu li{
+list-style-type: none;
+}
+.side-panel-menu a:hover{
+  color: #03a9f4;
+  transition: .5s ease;
+}
+.pro_image{
+  border-radius: 20px;
+}

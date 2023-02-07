@@ -1,0 +1,25 @@
+  .dots_animation{
+    position: absolute;
+    z-index: 1 ;
+    margin-top: 30em;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 1;
+  }
+ .section1{
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(196, 204, 83);
+ }
+  @keyframes example {
+    0%   {left:0px; top:320px;}
+    50%  {left:0px; top:-250px;}
+    100% {left:0px; top:320px;}
+  }

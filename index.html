@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/kemi.css">
+    <link rel="stylesheet" type="text/css" href="css/morphing.css">
+    <link rel="stylesheet" type="text/css" href="css/front_page.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/anim.css">
+    <link rel="stylesheet" type="text/css" href="css/skills.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/contacts.css">
+    <link rel="stylesheet" type="text/css" href="css/portofolio.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <script src="https://kit.fontawesome.com/aa4811ab5f.js" crossorigin="anonymous"></script>
+    <script src="script/profile.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script  src="script/hero_text.js"></script>
+    <script  src="script/skills.js"></script>
+    <script  src="script/scroll.js"></script>
+    <script  src="script/general.js"></script>
+    
+    <title>My Brand</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" class="pro_image">
+</head>
+<body onload="home_focus()">
+    <div id="container">
+        <header id="menu_header" >
+        <!--<div class="logo">
+            <a href="index.html"><img src="images/logo3.PNG" alt="My logo"></a>
+            </div>  -->
+            <div class="kemi">
+            <a href="index.html">
+                <h2>BERTIN</h2>
+                <h2>BERTIN</h2>
+            </a> 
+            </div>
+            <div class="nav-bar">
+                <ul class="menu">
+                    <li><a class="active" id="menu001" href="index.html">Home</a></li>
+                    <li><a href="#ABOUT" id="menu002">About</a></li>
+                    <li><a href="#SKILLS" id="menu003">Skills</a></li>
+                    <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
+                    <li><a href="#BLOG" id="menu005"> Blog</a></li>
+                    <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
+                </ul>
+                <div class="image-header">
+                    <img src="images/me3.jpg" onclick="imageClick()" class= "dropclick" alt="profile picture">
+                    <div id="myprofile" class="dropdown-content">
+                        <ul class="profile-content1">
+                            <li><a href="">Photo Gallery</a></li> 
+                        </ul>
+                        <ul class="profile-content2">
+                            <a href="mailto:ndahayosibertin17@gmail.com"><li><i class="fa-solid fa-envelope"></i></li></a>
+                            <a href="teleto: +250786949188"><li><i class="fa-solid fa-phone"></i></li></a>
+                            <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                            <a href="https://twitter.com/ndahayo_s" target="_blank"><li><i class="fa-brands fa-twitter"></i></li> </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="menu_scrolling">
+                <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+            </div>
+        </header>   
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <ul class="side-panel-menu">
+                    <li><a class="active" href="index.html" id="menu001">Home</a></li>
+                    <li><a href="#ABOUT" id="menu002">About</a></li>
+                    <li><a href="#SKILLS" id="menu003">Skills</a></li>
+                    <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
+                    <li><a href="#BLOG" id="menu005"> Blog</a></li>
+                    <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
+            </ul>
+        </div>
+        <div id="container_cat001">
+        <section class="front-page brand_section" id="front">
+                <div class="hero">
+                    <p>Hi, My Name Is</p>
+                    <h2>Bertin <br>NDAHAYO SINGIZWA.<br></h2>
+                    <span>I am a </span> 
+                    <div class="hero_text">
+                        <!-- My Typing animation goes Here
+                        'Web Developer.|', 'Junior Developer.|', 'Software Engineer.|',
+                        'Prospective Graduate at AUCA.|', 'Prospective Graduate at ALX.|'
+                        -->
+                    </div>  
+                
+                </div>
+                <div class="mycv">
+                    <div class="cv">
+                        <div class="cv_hire_me">
+                            <h6>Download My CV</h6>
+                            <a href="files/CV_new.pdf">
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                        <div class="cv_hire_me">
+                        <a href="#CONTACTS">
+                                <h6>Contact Me</h6>
+                            
+                        </a>
+                        </div>
+                        
+                        <div class="social_media">
+                            <ul class="sm-content2">
+                                <a href="https://github.com/Illustre13" target="_blank"><li><i class="fa fa-github"></i></li> </a>
+                                <a href="https://codepen.io/Illustre13/" target="_blank"><li><i class="fa fa-codepen"></i></li> </a> 
+                                <a href="mailto:ndahayosibertin17@gmail.com"><li><i class="fa-solid fa-envelope"></i></li></a>
+                                <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                                <a href="https://twitter.com/ndahayo_s" target="_blank"><li><i class="fa-brands fa-twitter"></i></li> </a>  
+                                <a href="teleto: +250786949188"><li><i class="fa-solid fa-phone"></i></li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+                <div class="scrollDown">
+                    <i class="fa-solid fa-angles-up fa-bounce" style=" --fa-bounce-rebound: 0" onclick="window.scrollTo(0,0)"></i>
+            </div>          
+        </section>
+        
+        <section class="aboutme brand_section" id="ABOUT">
+        
+            <h2 class="section-header">About Me </h2>
+            <div class="about_holder">
+            <div class="aboutme_text">
+            <p class="pa_text" >
+                I am Proactive Graduate In BSc Of Information Technology In Software Engineering At
+                Adventist University Of Central Africa (AUCA), With Strong Ambition To Excel Academically;
+                Possess Technical, Leadership And Communication Skills With Fluency In English.
+                I Am Passionate IT Specialist With Ambition To Give Back Expected Skills That I Will Acquire During
+                My Bachelor Years To My Community, In Information Technology Career, Or Any Other Related Fields.
+                I'm Always Interested In Learning Something New That Can Outstand My Career As A Professional
+                In Software Development &#10024;✨.
+            </p>
+            <div class="aboutme_buttons">
+                <div class="about_cv">
+                    <div class="about_cv_hire_me">
+                        <h6>Download My CV</h6>
+                        <a href="files/CV_new.pdf">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="about_cv_hire_me">
+                    <a href="#CONTACTS">
+                            <h6>Contact Me</h6>
+                        
+                    </a>
+                    </div>
+                
+                    </div>
+            </div>
+            </div><!--Closing the about me text -->
+            <div class="aboutme_profile_section">
+                <div class="aboutme_profile">
+                
+                </div><!--Ending about me profile-->
+                
+            </div>
+        
+            <div class="dots_animation">
+                <div class="section1">
+                    <div class="diamond">&#9830;</div>
+                    <div class="diamond" >&#9830;</div>
+                    <div class="diamond">&#9830;</div>
+                </div>
+                <div class="section1">
+                    <div class="diamond">&#9830;</div>
+                    <div class="diamond">&#9830;</div>
+                    <div class="diamond">&#9830;</div>
+                </div>
+                <div class="section1">
+                    <div class="diamond">&#9830;</div>
+                    <div class="diamond">&#9830;</div>
+                    <div class="diamond">&#9830;</div>
+                </div>
+                <div class="section1">
+                    <div class="diamond">&#9830;</div>
+                    <div class="diamond">&#9830;</div>
+                    <div class="diamond">&#9830;</div>
+                </div>
+                
+            </div>
+        </div>
+        
+        </section>
+        <section class="my_timeline brand_section" id="TIMELINE">
+            <h2 class="section-header">My Timeline</h2>
+            <div class="apart"></div>
+            <!-- Andela Timeline-->
+        
+            <div class="timeline_components">
+                <div class="tc_box front_box" >
+                    <h2>Software Engineer</h2>
+                    <h3>ATLP</h3>
+                    <p>Started Andela Technical Leadership Program as a Software Engineer</p>
+                </div>
+                <div class="tc_img">
+                    <img src="images/andela-svgrepo-com.svg " class="andela_logo" alt="Andela Logo">
+                </div>
+                <div class="tc_date"><p> January 2023 - Now</div>
+            </div>
+        
+            <!-- AUCA LAB ASSISTANCE Timeline -->
+            <div class="timeline_components_001">
+                <div class="tc_box_001 front_box">
+                    <h2>Lab Assistant</h2>
+                    <h3>AUCA</h3>
+                    <p>Worked as a Lab Assistant in Adventist University of Central Africa</p>
+                </div>
+                
+                    <div class="tc_img">
+                        <img src="images/auca_logo.png " class="auca_logo" alt="AUCA Logo">
+                    </div>
+                    <div class="tc_date_001"><p> April 2022 - December 2022</div>
+                
+            </div>
+            <!--ALX Timeline -->
+            
+            <div class="timeline_components">
+                <div class="tc_box front_box">
+                    <h2>Software Engineer</h2>
+                    <h3>ALX</h3>
+                    <p>Joined ALX Software Engineering Program for 6 months</p>
+                </div>
+                <div class="tc_img">
+                    <img src="images/alx.PNG " class="alx_logo" alt="ALX Logo">
+                </div>
+                <div class="tc_date"><p>February 2021 - August 2022</div>
+            </div>
+            <!--AUCA Timeline -->
+            
+            <div class="timeline_components">
+                <div class="tc_box_001 front_box">
+                    <h2>Information Technology</h2>
+                    <h3>AUCA</h3>
+                    <p>Studying Bachelor of Science in Information Technology, with a major in Software Engineering</p>
+                </div>
+                    <div class="tc_img">
+                        <img src="images/auca_logo.png " class="auca_logo" alt="Auca Logo">
+                    </div>
+                    <div class="tc_date_001 "><p> December 2022 - Now</div>
+                
+                
+            </div>
+            <!--Gahogo Adventist Academy Timeline -->
+            
+            <div class="timeline_components">
+                <div class="tc_box front_box">
+                    <h2>High School</h2>
+                    <h3>GAA</h3>
+                    <p>Studied Mathematics - Physics - Computer Science in my A’ Level and got Advanced Level Secondary School Certificate issued by REB.</p>
+                </div>
+                <div class="tc_img">
+                    <img src="images/gaa.PNG " class="andela_logo" alt="--Gahogo Adventist Academy Logo">
+                </div>
+                <div class="tc_date"><p> 2014 - 2019</div>
+            </div>
+            
+        </section>
+        <section class="skills brand_section" id="SKILLS">
+            <h2 class="section-header">My Skills</h2>
+            <div class="skill_holder">
+                <div class="skill_set">
+                    <h3>Front End development</h3>
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="skill_element">
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-css3"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-react"></i>
+                            <h4>React JS</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-js"></i>
+                            <h4>JS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_set">
+                    <h3>Back End development</h3>
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="skill_element">
+                        <div class="se_001">
+                            <i class="fa-brands fa-python"></i>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-java"></i>
+                            <h4>Java</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-node-js"></i>
+                            <h4>Node JS</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-php"></i>
+                            <h4>PHP</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_set">
+                    <h3>Mobile development</h3>
+                    <i class="fa-brands fa-mobile"></i>
+                    <div class="skill_element">
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_set">
+                    <h3>Soft Skills</h3>
+                    <i class="fa-solid fa-users-gear"></i>
+                    <div class="skill_element">
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Team Work</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Problem Solving</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>InterPersonal</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Time Management</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_set">
+                    <h3>DataBase Admin and Design</h3>
+                    <i class="fa-solid fa-database"></i>
+                    <div class="skill_element">
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Oracle</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Postgres</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>MongoDB</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>MySQL</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_set">
+                    <h3>Tools and Software</h3>
+                    <i class="fa-solid fa-gears"></i>
+                    <div class="skill_element">
+                        <div class="se_001">
+                            <i class="fa-brands fa-git"></i>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-linux"></i>
+                            <h4>Linux</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-html5"></i>
+                            <h4>Figma</h4>
+                        </div>
+                        <div class="se_001">
+                            <i class="fa-brands fa-wordpress"></i>
+                            <h4>WordPress</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portofolio brand_section" id="PORTOFOLIO">
+            <h2 class="section-header">My work</h2>
+            <div class="por_holder">
+                <h2>Check My Latest Projects</h2>
+                <div class="project_hs">
+                    <div class="hs_001">
+                        <div class="hs_004">
+                            <h3>Student Management System</h3>
+                        <div class="hs_002">
+                        <div class="hs_003">
+                            <p>Live Demo</p>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <div class="hs_003">
+                            <p>Source Code</p>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="hs_001">
+                        <div class="hs_004">
+                            <h3>Student Management System</h3>
+                        <div class="hs_002">
+                        <div class="hs_003">
+                            <p>Live Demo</p>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <div class="hs_003">
+                            <p>Source Code</p>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="hs_001">
+                        <div class="hs_004">
+                            <h3>Student Management System</h3>
+                        <div class="hs_002">
+                        <div class="hs_003">
+                            <p>Live Demo</p>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <div class="hs_003">
+                            <p>Source Code</p>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="hs_001">
+                        <div class="hs_004">
+                            <h3>Student Management System</h3>
+                        <div class="hs_002">
+                        <div class="hs_003">
+                            <p>Live Demo</p>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <div class="hs_003">
+                            <p>Source Code</p>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="hs_001">
+                        <div class="hs_004">
+                            <h3>Student Management System</h3>
+                        <div class="hs_002">
+                        <div class="hs_003">
+                            <p>Live Demo</p>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <div class="hs_003">
+                            <p>Source Code</p>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="controller">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="triangle">
+                    <h3>Want to work with me on a projects?</h3>
+                    <div class="cv_hire_me">
+                        <a href="#CONTACTS">
+                                <h6>Contact Me</h6>
+                            
+                        </a>
+                    </div>
+                    <div class="social_media">
+                        <ul class="sm-content2">
+                            <a href="https://github.com/Illustre13" target="_blank"><li><i class="fa fa-github"></i></li> </a>
+                            <a href="https://codepen.io/Illustre13/" target="_blank"><li><i class="fa fa-codepen"></i></li> </a> 
+                            <a href="mailto:ndahayosibertin17@gmail.com"><li><i class="fa-solid fa-envelope"></i></li></a>
+                            <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                            <a href="https://twitter.com/ndahayo_s" target="_blank"><li><i class="fa-brands fa-twitter"></i></li> </a>  
+                            <a href="teleto: +250786949188"><li><i class="fa-solid fa-phone"></i></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                    
+        </section>
+        <section class="blog brand_section" id="BLOG">
+            <h2 class="section-header" >Welcome To My Blog</h2>
+            <div class="blog_holder">
+                <h4>Recent Post</h4>
+                <h6>Don't miss the latest trends</h6>
+                <div class="article_holder"></div>
+                <div class="blog_end">
+                    <div class="show_more">
+                        <p>Show More Post</p>
+                    </div>
+                    <div class="want_to">
+                        <p>Want to always get <br> my latest posts</p>
+                    </div>
+                    <div class="sub">
+                        <!--<div contentEditable=true data-text="Enter Your email here" class="sub_email_section"></div>
+                        -->
+                        <input type="email" class="sub_email" name="email" placeholder="Enter your Email">
+                        <div class="sub_button">
+                            <p>Subsribe</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="contacts brand_section" id="CONTACTS">
+            <h2 class="section-header" >Contacts</h2>
+            <div class="contacts_section">
+                <div class="cs_001">
+                    <div class="cs_004">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="cs_005">
+                            <h1>Call Me</h1>
+                            <p><a href="teleto:+250786949188">+250 786 949 188</a></p>
+                        </div>
+                    </div>
+                    <div class="cs_004">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="cs_005">
+                            <h1>Send Me an Email</h1>
+                            <p><a href="mailto:ndahayosibertin17@gmail.com">ndahayosibertin17@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="cs_004">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="cs_005">
+                            <h1>Locate Me</h1>
+                            <p><a href="https://goo.gl/maps/HabEJ49Cbf6QatdK8">Kigali - RWANDA 🇷🇼</a></p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="cs_002">
+
+                </div>
+                <div class="cs_003">
+                    <div class="cs_names cs_003_part">
+                        <input type="text" placeholder="Enter your First Name">
+                        <input type="text" placeholder="Enter your First Name">
+                    </div>
+                    <div class="cs_email cs_003_part">
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="cs_007 cs_003_part">
+                        <textarea class="cs_message" id="cs_message" name="message" rows="16" cols="120" placeholder="Type your message here"></textarea>
+                        <div class="cs_send">
+                            <h2>Send</h2>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="FOOTER">
+            <p>© Copyright 2023 | Powered By ITH</p>
+        </footer>
+    </div><!--Ending Container Category 001-->
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+html{
+   scroll-behavior: smooth;
+}
+body{
+   background-color: black;
+   font-family: cursive;
+   position: relative;
+   padding: 0px 25px 0px 25px;
+   color: white;
+}
+
+.section-header{
+   font-size: 60px;
+   text-align: center;
+   padding: 75px 0px 0px 0px;
+}
+/*
+.section-header::before {
+   content: "";
+   width: 50%;
+   height: 100px;
+   position: absolute;
+   top: -70px;
+   left: 0;
+   background: rgb(15, 235, 70);
+   transform: skewY(8deg);
+}
+
+.section-header::after {
+   content: "";
+   width: 50%;
+   height: 100px;
+   position: absolute;
+   top: -70px;
+   right: 0;
+   background: rgb(15, 235, 70);
+   transform: skewY(-8deg);
+}*/
+
+*{
+   /*
+   box-sizing: border-box;*/
+   scroll-behavior: smooth;
+}

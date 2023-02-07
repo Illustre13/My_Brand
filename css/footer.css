@@ -1,0 +1,24 @@
+footer{
+    text-align: center;
+    font-size: larger;
+    border-top: 1 solid #039af4;
+    padding: 10px;
+    font-size: 20px;
+    transition: border .5s;
+    bottom: 0em;
+    margin: 20px;
+}
+footer:hover{
+    background-color: rgb(19, 7, 7);
+}
+footer span a{
+    text-decoration: none;
+    color: white;
+}
+.word123 {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  }
+  

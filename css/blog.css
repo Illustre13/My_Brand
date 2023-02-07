@@ -1,0 +1,23 @@
+.blog{
+    height: 100vh;
+}
+.sub{
+    background-color: #1A242E;
+}
+.sub_email_section{
+    width: 40%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+ 
+
+}
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text);
+    color: #d9d9d9;
+    padding-left: 5px;
+    border: none;
+  }
+  .sub_email{
+    background-color: #1A242E;
+    border: none;
+  }

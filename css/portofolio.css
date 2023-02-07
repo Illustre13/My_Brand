@@ -1,0 +1,111 @@
+.por_holder{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    
+}
+.project_hs{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.hs_001{
+    width: 400px;
+    height: 400px;
+    background-image: url(/images/cCC.jpeg);
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 10px;
+
+}
+.hs_004{
+    background-color: white;
+    color: black;
+    margin: 5px;
+    border-radius: 10px;
+    height: 120px;
+}
+.hs_002{
+    display: flex;
+    flex-direction: row;
+    
+}
+.hs_003{
+    margin-left: 20px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: -100px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+
+
+}
+.hs_003 > i{
+    margin: 20px;
+    
+}
+.controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1A242E;
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+}
+.controller >i{
+    margin: 10px;
+    font-size: 30px;
+
+}
+.controller>i:hover{
+    color: #03a9f4;
+    
+}
+  .triangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(26, 36,46, 0.5);
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    /*clip-path: polygon(100% 100%, 100% 100%, 100% 100%);*/
+  }
+
+ /* @supports (clip-path: inset(50%)) {
+    .triangle {
+      display: block;
+      height: 500px;
+      width: 500px;
+      background-color: rgba(26, 36, 46, 0.5);
+      border: inherit;
+      position: static;
+     margin: auto;
+      left: calc(50% - 10px);
+      clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+      transform: rotate(-45deg);
+      border-radius: 100px;
+      
+    }
+  }*/
+  .triangle > h3{
+ font-size: 30px;
+  }
