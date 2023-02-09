@@ -123,5 +123,9 @@
 .sub_button button:hover{
     background-color: #ffffff;
 }
+.show_more a{
+    text-decoration: none;
+    color: black;
+}
 
 
