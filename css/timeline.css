@@ -34,7 +34,6 @@
     padding: 5px;
 }
 .tc_box::before{
-
     content: " ";
     margin: 30px;
     position: relative;
@@ -43,7 +42,7 @@
     position: absolute;
     top: -20px;
     width: 0;
-    z-index: 1;
+    z-index: -1;
     left: -50px;
     border: medium solid white;
     border-width: 20px 20px 20px 0;
@@ -65,7 +64,6 @@
 
 }
 .tc_box_001::before{
-
     content: " ";
     margin: 30px;
     position: relative;
@@ -74,7 +72,7 @@
     position: absolute;
     top: -20px;
     width: 0;
-    z-index: 1;
+    z-index: -1;
     right: -50px;
     border: medium solid white;
     border-width: 20px 0px 20px 20px;

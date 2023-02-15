@@ -88,6 +88,7 @@
     width: 200px;
     text-align: center;
     margin: auto;
+    cursor: pointer;
 }
 .show_more i{
     font-size: xx-large;
