@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-.kemi{
+.logo_animation{
   background: #000;
   align-items: center;
   justify-content: center;
   margin-left: 150px;
   margin-top: -10px;
 }
-.kemi h2 {
+.logo_animation h2 {
   color: #fff;
   font-size: 3em;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
-.kemi h2:nth-child(1) {
+.logo_animation h2:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px #03a9f4;
 }
 
-.kemi h2:nth-child(2) {
+.logo_animation h2:nth-child(2) {
   color: #03a9f4;
   animation: animate 4s ease-in-out infinite;
 }
@@ -52,4 +52,15 @@
       0% 100%
     );
   }
+}
+
+@media only screen and (max-width: 390px) {
+
+.logo_animation{
+  margin-left: 80px;
+  margin-top: -2px;
+}
+.logo_animation h2{
+  font-size: 2.3em;
+}
 }
