@@ -133,8 +133,8 @@
     color:#03a9f4
   }
 
-  @media only screen and (max-width: 390px) {
-    .front-page{ 
+    @media only screen and (max-width: 390px) {
+      .front-page{ 
       display: flex;
       flex-direction: column;
       align-content: center;
