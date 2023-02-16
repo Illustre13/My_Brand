@@ -1,322 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/main_blog.css">
-    <link rel="stylesheet" type="text/css" href="/css/common.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/css/kemi.css">
-    <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <script src="https://kit.fontawesome.com/aa4811ab5f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/main_blog.css" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="/css/logo_animation.css" />
+    <link rel="stylesheet" type="text/css" href="/css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/aa4811ab5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Main - Blog</title>
-
-</head>
-<body>
-    <header id="menu_header" >
-        <!--<div class="logo">
+  </head>
+  <body>
+    <header id="menu_header">
+      <!--<div class="logo">
             <a href="index.html"><img src="images/logo3.PNG" alt="My logo"></a>
             </div>  -->
-            <div class="kemi">
-            <a href="index.html">
-                <h2>BERTIN</h2>
-                <h2>BERTIN</h2>
-            </a> 
-            </div>
-            <div class="nav-bar">
-                <ul class="menu">
-                    <li><a class="active" id="menu001" href="index.html">Home</a></li>
-                    <li><a href="#ABOUT" id="menu002">About</a></li>
-                    <li><a href="#SKILLS" id="menu003">Skills</a></li>
-                    <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
-                    <li><a href="#BLOG" id="menu005"> Blog</a></li>
-                    <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
-                </ul>
-                <div class="image-header">
-                    <img src="images/me3.jpg" onclick="imageClick()" class= "dropclick" alt="profile picture">
-                    <div id="myprofile" class="dropdown-content">
-                        <ul class="profile-content1">
-                            <li><a href="">Photo Gallery</a></li> 
-                        </ul>
-                        <ul class="profile-content2">
-                            <a href="mailto:ndahayosibertin17@gmail.com"><li><i class="fa-solid fa-envelope"></i></li></a>
-                            <a href="teleto: +250786949188"><li><i class="fa-solid fa-phone"></i></li></a>
-                            <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
-                            <a href="https://twitter.com/ndahayo_s" target="_blank"><li><i class="fa-brands fa-twitter"></i></li> </a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        
-            <div id="menu_scrolling">
-                <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
-            </div>
-    </header> 
+      <div class="logo_animation">
+        <a href="index.html">
+          <h2>BERTIN</h2>
+          <h2>BERTIN</h2>
+        </a>
+      </div>
+      <div class="nav-bar">
+        <ul class="menu">
+          <li><a class="active" id="menu001" href="index.html">Home</a></li>
+          <li><a href="#ABOUT" id="menu002">About</a></li>
+          <li><a href="#SKILLS" id="menu003">Skills</a></li>
+          <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
+          <li><a href="#BLOG" id="menu005"> Blog</a></li>
+          <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
+        </ul>
+        <div class="image-header">
+          <img
+            src="images/me3.jpg"
+            onclick="imageClick()"
+            class="dropclick"
+            alt="profile picture"
+          />
+          <div id="myprofile" class="dropdown-content">
+            <ul class="profile-content1">
+              <li><a href="">Photo Gallery</a></li>
+            </ul>
+            <ul class="profile-content2">
+              <a href="mailto:ndahayosibertin17@gmail.com"
+                ><li><i class="fa-solid fa-envelope"></i></li
+              ></a>
+              <a href="teleto: +250786949188"
+                ><li><i class="fa-solid fa-phone"></i></li
+              ></a>
+              <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"
+                ><li><i class="fa-brands fa-linkedin-in"></i></li
+              ></a>
+              <a href="https://twitter.com/ndahayo_s" target="_blank"
+                ><li><i class="fa-brands fa-twitter"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu_scrolling">
+        <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+      </div>
+    </header>
     <div class="blog-container">
-        
-        <div class="blog-front">
-            <div class="blog-front-txt">
-                <p>Hello Every one! 👋</p>
-                <h3>I'm Bertin <br>NDAHAYO SINGIZWA</h3>
-                <p>Welcome to my Blog!💥</p>
-                <div class="sub">
-                    <!--<div contentEditable=true data-text="Enter Your email here" class="sub_email_section"></div>
+      <div class="blog-front">
+        <div class="blog-front-txt">
+          <p>Hello Every one! 👋</p>
+          <h3>I'm Bertin <br />NDAHAYO SINGIZWA</h3>
+          <p>Welcome to my Blog!💥</p>
+          <div class="sub">
+            <!--<div contentEditable=true data-text="Enter Your email here" class="sub_email_section"></div>
                     -->
-                    <input type="email" class="sub_email" name="email" placeholder="Enter your Email">
-                    <div class="sub_button">
-                        <button>SubScribe <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                </div>
+            <input
+              type="email"
+              class="sub_email"
+              name="email"
+              placeholder="Enter your Email"
+            />
+            <div class="sub_button">
+              <button>SubScribe <i class="fa-solid fa-arrow-right"></i></button>
             </div>
-            <div class="blog-front-img">
-                <img src="/images/my_profile.png" alt="My Picture ">
-            </div>
+          </div>
         </div>
-        <div class="hot_topics">
-            <h1>Hot Topics</h1>
-            <div class="ht_leaf">
-                <div class="ht_leaf_001">
-                    <img src="images/c65d41095846c3ced34638f8d2009518.jpg" alt="Programming">
-                    <div class="ht_leaf_002">
-                        <h3>Programming</h3>
-                        <p>10 Articles</p>
-                    </div>
-                </div>
-                <div class="ht_leaf_001">
-                    <img src="images/c65d41095846c3ced34638f8d2009518.jpg" alt="Programming">
-                    <div class="ht_leaf_002">
-                        <h3>Programming</h3>
-                        <p>10 Articles</p>
-                    </div>
-                </div>
-                <div class="ht_leaf_001">
-                    <img src="images/c65d41095846c3ced34638f8d2009518.jpg" alt="Programming">
-                    <div class="ht_leaf_002">
-                        <h3>Programming</h3>
-                        <p>10 Articles</p>
-                    </div>
-                </div>
-                <div class="ht_leaf_001">
-                    <img src="images/c65d41095846c3ced34638f8d2009518.jpg" alt="Programming">
-                    <div class="ht_leaf_002">
-                        <h3>Programming</h3>
-                        <p>10 Articles</p>
-                    </div>
-                </div>
-                <div class="ht_leaf_001">
-                    <img src="images/c65d41095846c3ced34638f8d2009518.jpg" alt="Programming">
-                    <div class="ht_leaf_002">
-                        <h3>Programming</h3>
-                        <p>10 Articles</p>
-                    </div>
-                </div>
-                <div class="ht_leaf_001">
-                    <img src="images/c65d41095846c3ced34638f8d2009518.jpg" alt="Programming">
-                    <div class="ht_leaf_002">
-                        <h3>Programming</h3>
-                        <p>10 Articles</p>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="controller">
-                <i class="fa-solid fa-angle-left"></i>
-                <i class="fa-solid fa-angle-right"></i>
-            </div>
+        <div class="blog-front-img">
+          <img src="/images/my_profile.png" alt="My Picture " />
         </div>
-        <div class="editor">
-            <h2>Editor's Pick</h2>
-            <h5>Featured and highly rated articles</h5>
-            <div class="ed_leaf_super">
-                <div class="ed_leaf">
-                    <div class="ed_img">
-                        <img src="/images/com.jpg" alt="editor's pick image">
-                    </div>
-                    <div class="ah_misc">
-                        <div class="hashtags">
-                            <p># Travel</p>
-                            <p># Lifestyle</p>
-    
-                        </div>
-                        <div class="read_date">
-                            <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        </div>
-                    </div>
-                    <p class="ed_title">13 path to a succesfull lifestyle</p>
-                    <div class="ed_profile">
-                        <div class="ed_profile_img">
-                            <img src="/images/a.jpg">
-                        </div>
-                        <div class="ed_profile_name">
-                            <h3>Bertin NDAHAYO</h3>
-                            <p>25 November 2022</p>
-                        </div>
-                        <div class="read-more">
-                            <div class="circle"></div>
-                            <p><a href="#">Read More</a></p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="ed_leaf">
-                    <div class="ed_img">
-                        <img src="/images/com.jpg" alt="editor's pick image">
-                    </div>
-                    <div class="ah_misc">
-                        <div class="hashtags">
-                            <p># Travel</p>
-                            <p># Lifestyle</p>
-    
-                        </div>
-                        <div class="read_date">
-                            <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        </div>
-                    </div>
-                    <p class="ed_title">13 path to a succesfull lifestyle</p>
-                    <div class="ed_profile">
-                        <div class="ed_profile_img">
-                            <img src="/images/a.jpg">
-                        </div>
-                        <div class="ed_profile_name">
-                            <h3>Bertin NDAHAYO</h3>
-                            <p>25 November 2022</p>
-                        </div>
-                        <div class="read-more">
-                            <div class="circle"></div>
-                            <p><a href="#">Read More</a></p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="ed_leaf">
-                    <div class="ed_img">
-                        <img src="/images/com.jpg" alt="editor's pick image">
-                    </div>
-                    <div class="ah_misc">
-                        <div class="hashtags">
-                            <p># Travel</p>
-                            <p># Lifestyle</p>
-    
-                        </div>
-                        <div class="read_date">
-                            <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        </div>
-                    </div>
-                    <p class="ed_title">13 path to a succesfull lifestyle</p>
-                    <div class="ed_profile">
-                        <div class="ed_profile_img">
-                            <img src="/images/a.jpg">
-                        </div>
-                        <div class="ed_profile_name">
-                            <h3>Bertin NDAHAYO</h3>
-                            <p>25 November 2022</p>
-                        </div>
-                        <div class="read-more">
-                            <div class="circle"></div>
-                            <p><a href="#">Read More</a></p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="ed_leaf">
-                    <div class="ed_img">
-                        <img src="/images/com.jpg" alt="editor's pick image">
-                    </div>
-                    <div class="ah_misc">
-                        <div class="hashtags">
-                            <p># Travel</p>
-                            <p># Lifestyle</p>
-    
-                        </div>
-                        <div class="read_date">
-                            <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        </div>
-                    </div>
-                    <p class="ed_title">13 path to a succesfull lifestyle</p>
-                    <div class="ed_profile">
-                        <div class="ed_profile_img">
-                            <img src="/images/a.jpg">
-                        </div>
-                        <div class="ed_profile_name">
-                            <h3>Bertin NDAHAYO</h3>
-                            <p>25 November 2022</p>
-                        </div>
-                        <div class="read-more">
-                            <div class="circle"></div>
-                            <p><a href="#">Read More</a></p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="ed_leaf">
-                    <div class="ed_img">
-                        <img src="/images/com.jpg" alt="editor's pick image">
-                    </div>
-                    <div class="ah_misc">
-                        <div class="hashtags">
-                            <p># Travel</p>
-                            <p># Lifestyle</p>
-    
-                        </div>
-                        <div class="read_date">
-                            <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        </div>
-                    </div>
-                    <p class="ed_title">13 path to a succesfull lifestyle</p>
-                    <div class="ed_profile">
-                        <div class="ed_profile_img">
-                            <img src="/images/a.jpg">
-                        </div>
-                        <div class="ed_profile_name">
-                            <h3>Bertin NDAHAYO</h3>
-                            <p>25 November 2022</p>
-                        </div>
-                        <div class="read-more">
-                            <div class="circle"></div>
-                            <p><a href="#">Read More</a></p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="ed_leaf">
-                    <div class="ed_img">
-                        <img src="/images/com.jpg" alt="editor's pick image">
-                    </div>
-                    <div class="ah_misc">
-                        <div class="hashtags">
-                            <p># Travel</p>
-                            <p># Lifestyle</p>
-    
-                        </div>
-                        <div class="read_date">
-                            <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        </div>
-                    </div>
-                    <p class="ed_title">13 path to a succesfull lifestyle</p>
-                    <div class="ed_profile">
-                        <div class="ed_profile_img">
-                            <img src="/images/a.jpg">
-                        </div>
-                        <div class="ed_profile_name">
-                            <h3>Bertin NDAHAYO</h3>
-                            <p>25 November 2022</p>
-                        </div>
-                        <div class="read-more">
-                            <div class="circle"></div>
-                            <p><a href="#">Read More</a></p>
-                        </div>
-                    </div>
-    
-                </div>
+      </div>
+      <div class="hot_topics">
+        <h1>Hot Topics</h1>
+        <div class="ht_leaf">
+          <div class="ht_leaf_001">
+            <img
+              src="images/c65d41095846c3ced34638f8d2009518.jpg"
+              alt="Programming"
+            />
+            <div class="ht_leaf_002">
+              <h3>Programming</h3>
+              <p>10 Articles</p>
             </div>
+          </div>
+          <div class="ht_leaf_001">
+            <img
+              src="images/c65d41095846c3ced34638f8d2009518.jpg"
+              alt="Programming"
+            />
+            <div class="ht_leaf_002">
+              <h3>Programming</h3>
+              <p>10 Articles</p>
+            </div>
+          </div>
+          <div class="ht_leaf_001">
+            <img
+              src="images/c65d41095846c3ced34638f8d2009518.jpg"
+              alt="Programming"
+            />
+            <div class="ht_leaf_002">
+              <h3>Programming</h3>
+              <p>10 Articles</p>
+            </div>
+          </div>
+          <div class="ht_leaf_001">
+            <img
+              src="images/c65d41095846c3ced34638f8d2009518.jpg"
+              alt="Programming"
+            />
+            <div class="ht_leaf_002">
+              <h3>Programming</h3>
+              <p>10 Articles</p>
+            </div>
+          </div>
+          <div class="ht_leaf_001">
+            <img
+              src="images/c65d41095846c3ced34638f8d2009518.jpg"
+              alt="Programming"
+            />
+            <div class="ht_leaf_002">
+              <h3>Programming</h3>
+              <p>10 Articles</p>
+            </div>
+          </div>
+          <div class="ht_leaf_001">
+            <img
+              src="images/c65d41095846c3ced34638f8d2009518.jpg"
+              alt="Programming"
+            />
+            <div class="ht_leaf_002">
+              <h3>Programming</h3>
+              <p>10 Articles</p>
+            </div>
+          </div>
         </div>
-        <div class="show-more">
-            <p><a href="#">Show More <i class="fa-solid fa-arrow-right"></i></a></p>
+        <div class="controller">
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
         </div>
-            <!--
+      </div>
+      <div class="editor">
+        <h2>Editor's Pick</h2>
+        <h5>Featured and highly rated articles</h5>
+        <div class="ed_leaf_super">
+          <div class="ed_leaf">
+            <div class="ed_img">
+              <img src="/images/com.jpg" alt="editor's pick image" />
+            </div>
+            <div class="ah_misc">
+              <div class="hashtags">
+                <p># Travel</p>
+                <p># Lifestyle</p>
+              </div>
+              <div class="read_date">
+                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+              </div>
+            </div>
+            <p class="ed_title">13 path to a succesfull lifestyle</p>
+            <div class="ed_profile">
+              <div class="ed_profile_img">
+                <img src="/images/a.jpg" />
+              </div>
+              <div class="ed_profile_name">
+                <h3>Bertin NDAHAYO</h3>
+                <p>25 November 2022</p>
+              </div>
+              <div class="read-more">
+                <div class="circle"></div>
+                <p><a href="article_page.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="ed_leaf">
+            <div class="ed_img">
+              <img src="/images/com.jpg" alt="editor's pick image" />
+            </div>
+            <div class="ah_misc">
+              <div class="hashtags">
+                <p># Travel</p>
+                <p># Lifestyle</p>
+              </div>
+              <div class="read_date">
+                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+              </div>
+            </div>
+            <p class="ed_title">13 path to a succesfull lifestyle</p>
+            <div class="ed_profile">
+              <div class="ed_profile_img">
+                <img src="/images/a.jpg" />
+              </div>
+              <div class="ed_profile_name">
+                <h3>Bertin NDAHAYO</h3>
+                <p>25 November 2022</p>
+              </div>
+              <div class="read-more">
+                <div class="circle"></div>
+                <p><a href="article_page.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="ed_leaf">
+            <div class="ed_img">
+              <img src="/images/com.jpg" alt="editor's pick image" />
+            </div>
+            <div class="ah_misc">
+              <div class="hashtags">
+                <p># Travel</p>
+                <p># Lifestyle</p>
+              </div>
+              <div class="read_date">
+                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+              </div>
+            </div>
+            <p class="ed_title">13 path to a succesfull lifestyle</p>
+            <div class="ed_profile">
+              <div class="ed_profile_img">
+                <img src="/images/a.jpg" />
+              </div>
+              <div class="ed_profile_name">
+                <h3>Bertin NDAHAYO</h3>
+                <p>25 November 2022</p>
+              </div>
+              <div class="read-more">
+                <div class="circle"></div>
+                <p><a href="article_page.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="ed_leaf">
+            <div class="ed_img">
+              <img src="/images/com.jpg" alt="editor's pick image" />
+            </div>
+            <div class="ah_misc">
+              <div class="hashtags">
+                <p># Travel</p>
+                <p># Lifestyle</p>
+              </div>
+              <div class="read_date">
+                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+              </div>
+            </div>
+            <p class="ed_title">13 path to a succesfull lifestyle</p>
+            <div class="ed_profile">
+              <div class="ed_profile_img">
+                <img src="/images/a.jpg" />
+              </div>
+              <div class="ed_profile_name">
+                <h3>Bertin NDAHAYO</h3>
+                <p>25 November 2022</p>
+              </div>
+              <div class="read-more">
+                <div class="circle"></div>
+                <p><a href="article_page.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="ed_leaf">
+            <div class="ed_img">
+              <img src="/images/com.jpg" alt="editor's pick image" />
+            </div>
+            <div class="ah_misc">
+              <div class="hashtags">
+                <p># Travel</p>
+                <p># Lifestyle</p>
+              </div>
+              <div class="read_date">
+                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+              </div>
+            </div>
+            <p class="ed_title">13 path to a succesfull lifestyle</p>
+            <div class="ed_profile">
+              <div class="ed_profile_img">
+                <img src="/images/a.jpg" />
+              </div>
+              <div class="ed_profile_name">
+                <h3>Bertin NDAHAYO</h3>
+                <p>25 November 2022</p>
+              </div>
+              <div class="read-more">
+                <div class="circle"></div>
+                <p><a href="article_page.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="ed_leaf">
+            <div class="ed_img">
+              <img src="/images/com.jpg" alt="editor's pick image" />
+            </div>
+            <div class="ah_misc">
+              <div class="hashtags">
+                <p># Travel</p>
+                <p># Lifestyle</p>
+              </div>
+              <div class="read_date">
+                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+              </div>
+            </div>
+            <p class="ed_title">13 path to a succesfull lifestyle</p>
+            <div class="ed_profile">
+              <div class="ed_profile_img">
+                <img src="/images/a.jpg" />
+              </div>
+              <div class="ed_profile_name">
+                <h3>Bertin NDAHAYO</h3>
+                <p>25 November 2022</p>
+              </div>
+              <div class="read-more">
+                <div class="circle"></div>
+                <p><a href="article_page.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <p>
+          <a href="#">Show More <i class="fa-solid fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <!--
             <div class="recent_side">
                 <h2>Recent Post</h2>
                 <h5>Don't miss the latest trends</h5>
@@ -333,345 +361,411 @@
                         <div class="">
                     </div>
                 </div> -->
-        <div class="recent_side">
-            <div class="recent">
-                <h4>Recent Post</h4>
-                <h6>Don't miss the latest trends</h6>
-                <div class="article_holder">
-                    <img src="/images/com.jpg" alt="article image">
-                    <div class="ah_001">
-                        <h3>13 path to a succesfull lifestyle</h3>
-                        <p>Success is the accomplishment of certain goals you set in life. Each person has different ideas of what success might look like for them, like getting a certain job, earning a certain amount of money or owning a house. </p>
-                        <div class="ah_misc">
-                            <div class="hashtags">
-                                <p>#Travel</p>
-                                <p>#Lifestyle</p>
-
-                            </div>
-                            <div class="read_date">
-                                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                <div class="line"></div>
-
+      <div class="recent_side">
+        <div class="recent">
+          <h4>Recent Post</h4>
+          <h6>Don't miss the latest trends</h6>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
                 </div>
-                <div class="article_holder">
-                    <img src="/images/com.jpg" alt="article image">
-                    <div class="ah_001">
-                        <h3>13 path to a succesfull lifestyle</h3>
-                        <p>Success is the accomplishment of certain goals you set in life. Each person has different ideas of what success might look like for them, like getting a certain job, earning a certain amount of money or owning a house. </p>
-                        <div class="ah_misc">
-                            <div class="hashtags">
-                                <p>#Travel</p>
-                                <p>#Lifestyle</p>
-
-                            </div>
-                            <div class="read_date">
-                                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
                 </div>
-                <div class="article_holder">
-                    <img src="/images/com.jpg" alt="article image">
-                    <div class="ah_001">
-                        <h3>13 path to a succesfull lifestyle</h3>
-                        <p>Success is the accomplishment of certain goals you set in life. Each person has different ideas of what success might look like for them, like getting a certain job, earning a certain amount of money or owning a house. </p>
-                        <div class="ah_misc">
-                            <div class="hashtags">
-                                <p>#Travel</p>
-                                <p>#Lifestyle</p>
-
-                            </div>
-                            <div class="read_date">
-                                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="article_holder">
-                    <img src="/images/com.jpg" alt="article image">
-                    <div class="ah_001">
-                        <h3>13 path to a succesfull lifestyle</h3>
-                        <p>Success is the accomplishment of certain goals you set in life. Each person has different ideas of what success might look like for them, like getting a certain job, earning a certain amount of money or owning a house. </p>
-                        <div class="ah_misc">
-                            <div class="hashtags">
-                                <p>#Travel</p>
-                                <p>#Lifestyle</p>
-
-                            </div>
-                            <div class="read_date">
-                                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="article_holder">
-                    <img src="/images/com.jpg" alt="article image">
-                    <div class="ah_001">
-                        <h3>13 path to a succesfull lifestyle</h3>
-                        <p>Success is the accomplishment of certain goals you set in life. Each person has different ideas of what success might look like for them, like getting a certain job, earning a certain amount of money or owning a house. </p>
-                        <div class="ah_misc">
-                            <div class="hashtags">
-                                <p>#Travel</p>
-                                <p>#Lifestyle</p>
-                            </div>
-                            <div class="read_date">
-                                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+              </div>
             </div>
-            <div class="side_bar">
-                <div class="side_popular">
-                    <h2>Popular Posts</h2>
-                    <div class="pp_line"></div>
-                    <div class="popular">
-                        <img src="/images/a.jpg" alt="Posts">
-                        <div class="popular_001">
-                            <h4>13 path to a succesfull lifestyle</h4>
-                            <div class="pp_misc">
-                                <div class="pp_share_tags">
-                                    <div class="pp_hashtags">
-                                        <p>#Travel</p>
-                                        <p>#Lifestyle</p>
-                                    </div>
-                                    <div class="share_icons">
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-comment"></i>
-                                        <i class="fa-solid fa-square-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="read_date">
-                                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular">
-                        <img src="/images/a.jpg" alt="Posts">
-                        <div class="popular_001">
-                            <h4>13 path to a succesfull lifestyle</h4>
-                            <div class="pp_misc">
-                                <div class="pp_share_tags">
-                                    <div class="pp_hashtags">
-                                        <p>#Travel</p>
-                                        <p>#Lifestyle</p>
-                                    </div>
-                                    <div class="share_icons">
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-comment"></i>
-                                        <i class="fa-solid fa-square-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="read_date">
-                                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular">
-                        <img src="/images/a.jpg" alt="Posts">
-                        <div class="popular_001">
-                            <h4>13 path to a succesfull lifestyle</h4>
-                            <div class="pp_misc">
-                                <div class="pp_share_tags">
-                                    <div class="pp_hashtags">
-                                        <p>#Travel</p>
-                                        <p>#Lifestyle</p>
-                                    </div>
-                                    <div class="share_icons">
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-comment"></i>
-                                        <i class="fa-solid fa-square-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="read_date">
-                                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular">
-                        <img src="/images/a.jpg" alt="Posts">
-                        <div class="popular_001">
-                            <h4>13 path to a succesfull lifestyle</h4>
-                            <div class="pp_misc">
-                                <div class="pp_share_tags">
-                                    <div class="pp_hashtags">
-                                        <p>#Travel</p>
-                                        <p>#Lifestyle</p>
-                                    </div>
-                                    <div class="share_icons">
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-comment"></i>
-                                        <i class="fa-solid fa-square-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="read_date">
-                                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular">
-                        <img src="/images/a.jpg" alt="Posts">
-                        <div class="popular_001">
-                            <h4>13 path to a succesfull lifestyle</h4>
-                            <div class="pp_misc">
-                                <div class="pp_share_tags">
-                                    <div class="pp_hashtags">
-                                        <p>#Travel</p>
-                                        <p>#Lifestyle</p>
-                                    </div>
-                                    <div class="share_icons">
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-comment"></i>
-                                        <i class="fa-solid fa-square-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="read_date">
-                                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular">
-                        <img src="/images/a.jpg" alt="Posts">
-                        <div class="popular_001">
-                            <h4>13 path to a succesfull lifestyle</h4>
-                            <div class="pp_misc">
-                                <div class="pp_share_tags">
-                                    <div class="pp_hashtags">
-                                        <p>#Travel</p>
-                                        <p>#Lifestyle</p>
-                                    </div>
-                                    <div class="share_icons">
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-comment"></i>
-                                        <i class="fa-solid fa-square-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="read_date">
-                                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular">
-                        <img src="/images/a.jpg" alt="Posts">
-                        <div class="popular_001">
-                            <h4>13 path to a succesfull lifestyle</h4>
-                            <div class="pp_misc">
-                                <div class="pp_share_tags">
-                                    <div class="pp_hashtags">
-                                        <p>#Travel</p>
-                                        <p>#Lifestyle</p>
-                                    </div>
-                                    <div class="share_icons">
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <p> 20 </p>
-                                        <i class="fa-regular fa-comment"></i>
-                                        <i class="fa-solid fa-square-share-nodes"></i>
-                                    </div>
-                                </div>
-                                <div class="read_date">
-                                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
                 </div>
-                <div class="side_comments">
-                    <h2>Recent Comments</h2>
-                    <div class="pp_line"></div>
-                    <div class="comment_001">
-                        <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque vero cumque aliquam ad eos eaque enim blanditiis laboriosam facilis obcaecati delectus incidunt, quibusdam odio ex iusto rem vitae provident eveniet!</q>
-                        <div class="comment_002">
-                            <img src="/images/a.jpg" alt="Comment Image">
-                            <div class="comment_003">
-                                <h3>Bertin NDAHAYO</h3>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment_001">
-                        <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque vero cumque aliquam ad eos eaque enim blanditiis laboriosam facilis obcaecati delectus incidunt, quibusdam odio ex iusto rem vitae provident eveniet!</q>
-                        <div class="comment_002">
-                            <img src="/images/a.jpg" alt="Comment Image">
-                            <div class="comment_003">
-                                <h3>Bertin NDAHAYO</h3>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment_001">
-                        <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque vero cumque aliquam ad eos eaque enim blanditiis laboriosam facilis obcaecati delectus incidunt, quibusdam odio ex iusto rem vitae provident eveniet!</q>
-                        <div class="comment_002">
-                            <img src="/images/a.jpg" alt="Comment Image">
-                            <div class="comment_003">
-                                <h3>Bertin NDAHAYO</h3>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment_001">
-                        <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque vero cumque aliquam ad eos eaque enim blanditiis laboriosam facilis obcaecati delectus incidunt, quibusdam odio ex iusto rem vitae provident eveniet!</q>
-                        <div class="comment_002">
-                            <img src="/images/a.jpg" alt="Comment Image">
-                            <div class="comment_003">
-                                <h3>Bertin NDAHAYO</h3>
-                                <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
             </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
         </div>
-        <div class="show-more">
-            <p><a href="#">Show More <i class="fa-solid fa-arrow-right"></i></a></p>
+        <div class="side_bar">
+          <div class="side_popular">
+            <h2>Popular Posts</h2>
+            <div class="pp_line"></div>
+            <div class="popular">
+              <img src="/images/a.jpg" alt="Posts" />
+              <div class="popular_001">
+                <h4>13 path to a succesfull lifestyle</h4>
+                <div class="pp_misc">
+                  <div class="pp_share_tags">
+                    <div class="pp_hashtags">
+                      <p>#Travel</p>
+                      <p>#Lifestyle</p>
+                    </div>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
+                    </div>
+                  </div>
+                  <div class="read_date">
+                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular">
+              <img src="/images/a.jpg" alt="Posts" />
+              <div class="popular_001">
+                <h4>13 path to a succesfull lifestyle</h4>
+                <div class="pp_misc">
+                  <div class="pp_share_tags">
+                    <div class="pp_hashtags">
+                      <p>#Travel</p>
+                      <p>#Lifestyle</p>
+                    </div>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
+                    </div>
+                  </div>
+                  <div class="read_date">
+                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular">
+              <img src="/images/a.jpg" alt="Posts" />
+              <div class="popular_001">
+                <h4>13 path to a succesfull lifestyle</h4>
+                <div class="pp_misc">
+                  <div class="pp_share_tags">
+                    <div class="pp_hashtags">
+                      <p>#Travel</p>
+                      <p>#Lifestyle</p>
+                    </div>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
+                    </div>
+                  </div>
+                  <div class="read_date">
+                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular">
+              <img src="/images/a.jpg" alt="Posts" />
+              <div class="popular_001">
+                <h4>13 path to a succesfull lifestyle</h4>
+                <div class="pp_misc">
+                  <div class="pp_share_tags">
+                    <div class="pp_hashtags">
+                      <p>#Travel</p>
+                      <p>#Lifestyle</p>
+                    </div>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
+                    </div>
+                  </div>
+                  <div class="read_date">
+                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular">
+              <img src="/images/a.jpg" alt="Posts" />
+              <div class="popular_001">
+                <h4>13 path to a succesfull lifestyle</h4>
+                <div class="pp_misc">
+                  <div class="pp_share_tags">
+                    <div class="pp_hashtags">
+                      <p>#Travel</p>
+                      <p>#Lifestyle</p>
+                    </div>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
+                    </div>
+                  </div>
+                  <div class="read_date">
+                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular">
+              <img src="/images/a.jpg" alt="Posts" />
+              <div class="popular_001">
+                <h4>13 path to a succesfull lifestyle</h4>
+                <div class="pp_misc">
+                  <div class="pp_share_tags">
+                    <div class="pp_hashtags">
+                      <p>#Travel</p>
+                      <p>#Lifestyle</p>
+                    </div>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
+                    </div>
+                  </div>
+                  <div class="read_date">
+                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular">
+              <img src="/images/a.jpg" alt="Posts" />
+              <div class="popular_001">
+                <h4>13 path to a succesfull lifestyle</h4>
+                <div class="pp_misc">
+                  <div class="pp_share_tags">
+                    <div class="pp_hashtags">
+                      <p>#Travel</p>
+                      <p>#Lifestyle</p>
+                    </div>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
+                    </div>
+                  </div>
+                  <div class="read_date">
+                    <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="side_comments">
+            <h2>Recent Comments</h2>
+            <div class="pp_line"></div>
+            <div class="comment_001">
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                ex iusto rem vitae provident eveniet!</q
+              >
+              <div class="comment_002">
+                <img src="/images/a.jpg" alt="Comment Image" />
+                <div class="comment_003">
+                  <h3>Bertin NDAHAYO</h3>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment_001">
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                ex iusto rem vitae provident eveniet!</q
+              >
+              <div class="comment_002">
+                <img src="/images/a.jpg" alt="Comment Image" />
+                <div class="comment_003">
+                  <h3>Bertin NDAHAYO</h3>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment_001">
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                ex iusto rem vitae provident eveniet!</q
+              >
+              <div class="comment_002">
+                <img src="/images/a.jpg" alt="Comment Image" />
+                <div class="comment_003">
+                  <h3>Bertin NDAHAYO</h3>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment_001">
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                ex iusto rem vitae provident eveniet!</q
+              >
+              <div class="comment_002">
+                <img src="/images/a.jpg" alt="Comment Image" />
+                <div class="comment_003">
+                  <h3>Bertin NDAHAYO</h3>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="main_blog_end">
-           <button>Admin Portal</button>
-           <button>Contact Me</button>
-        </div>
+      </div>
+      <div class="show-more">
+        <p>
+          <a href="#">Show More <i class="fa-solid fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="main_blog_end">
+        <button><a href="admin_login_page.html">Admin Portal</a></button>
+        <button><a href="contactme.html">Contact Me</a></button>
+      </div>
     </div>
     <div class="scrollDown">
-        <i class="fa-solid fa-angles-up fa-bounce" style=" --fa-bounce-rebound: 0" onclick="window.scrollTo(0,0)"></i>
-</div>
-<footer id="FOOTER">
-    <p>© Copyright 2023 | Powered By ITH</p>
-</footer>
-</body>
+      <i
+        class="fa-solid fa-angles-up fa-bounce"
+        style="--fa-bounce-rebound: 0"
+        onclick="window.scrollTo(0,0)"
+      ></i>
+    </div>
+    <footer id="FOOTER">
+      <p>© Copyright 2023 | Powered By ITH</p>
+    </footer>
+  </body>
 </html>

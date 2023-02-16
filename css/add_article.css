@@ -1,0 +1,56 @@
+
+h1{
+    margin: 100px 0px 0px 0px;
+    text-align: center;
+    font-size: 40px;
+
+}
+.aa_container_001{
+    background-color: rgb(26,36,46);
+    padding: 10px;
+}
+.aa_section001{
+    display: grid;
+    grid-template-columns: 250px 600px;
+    margin: 10px;
+}
+label{
+   
+    margin-right: 100px;
+}
+
+input[type="submit"]{
+    margin: auto;
+    width: 10rem;
+    border-radius: 10px;
+    height: 3rem;
+    font-size: 20px;
+    font-weight: 200;
+    background-color: #03a9f4;
+
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    
+}
+.post001{
+
+    display: grid;
+    grid-template-columns: 10rem auto;
+    justify-content: center;
+
+}
+.post001 i{
+    position: relative;
+    left: -40px;
+    top: 15px;
+    color: black;
+    font-size: 20px;
+}
+form{
+    margin: auto;
+}
+.last_p a{
+    text-decoration: none;
+    color:#03a9f4;
+}
