@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/logo_animation.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/logo_animation.css" />
+    <link rel="stylesheet" type="text/css" href="css/add_article.css" />
+    <script
+      src="https://kit.fontawesome.com/aa4811ab5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Add Article</title>
+  </head>
+  <body>
+    <header id="menu_header">
+
+      <div class="logo_animation">
+        <a href="index.html">
+          <h2>BERTIN</h2>
+          <h2>BERTIN</h2>
+        </a>
+      </div>
+      <div class="nav-bar">
+        <ul class="menu">
+          <li><a class="active" id="menu001" href="index.html">Home</a></li>
+          <li><a href="#ABOUT" id="menu002">About</a></li>
+          <li><a href="#SKILLS" id="menu003">Skills</a></li>
+          <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
+          <li><a href="#BLOG" id="menu005"> Blog</a></li>
+          <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
+        </ul>
+        <div class="image-header">
+          <img
+            src="images/me3.jpg"
+            onclick="imageClick()"
+            class="dropclick"
+            alt="profile picture"
+          />
+          <div id="myprofile" class="dropdown-content">
+            <ul class="profile-content1">
+              <li><a href="">Photo Gallery</a></li>
+            </ul>
+            <ul class="profile-content2">
+              <a href="mailto:ndahayosibertin17@gmail.com"
+                ><li><i class="fa-solid fa-envelope"></i></li
+              ></a>
+              <a href="teleto: +250786949188"
+                ><li><i class="fa-solid fa-phone"></i></li
+              ></a>
+              <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"
+                ><li><i class="fa-brands fa-linkedin-in"></i></li
+              ></a>
+              <a href="https://twitter.com/ndahayo_s" target="_blank"
+                ><li><i class="fa-brands fa-twitter"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu_scrolling">
+        <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+      </div>
+    </header>
+    <div class="aa_container">
+      <h1>Create New Article</h1>
+      <div class="aa_container_001">
+        <form action="#" method="post">
+          <div class="aa_section001">
+            <div class="label_section">
+              <label for="title">Article Title: </label>
+            </div>
+            <input type="text" name="title" placeholder="Enter Article title" />
+          </div>
+          <div class="aa_section001">
+            <div class="label_section">
+              <label for="category">Topic Category </label>
+            </div>
+            <select name="category">
+              <option value="Programming">Programming</option>
+              <option value="Programming">Life Style</option>
+              <option value="Programming">Sport</option>
+              <option value="Programming">News</option>
+              <option value="Programming">Technology</option>
+              <option value="Programming">Business</option>
+            </select>
+          </div>
+          <div class="aa_section001">
+            <div class="label_section">
+              <label for="content">Article content: </label>
+            </div>
+            <textarea
+              class="cs_message"
+              id="cs_message"
+              name="message"
+              rows="20"
+              cols="100"
+              placeholder="Enter your content here"
+            ></textarea>
+          </div>
+          <div class="aa_section001">
+            <div class="label_section">
+              <label for="upload">Upload Images: </label>
+            </div>
+            <input type="file" name="files" />
+          </div>
+          <div class="post001">
+            <input type="submit" value="Post" />
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+        </form>
+      </div>
+      <p class="last_p">
+        Back To Admin Portal <a href="dashboard.html"> Click here. ➡</a>
+      </p>
+    </div>
+  </body>
+</html>

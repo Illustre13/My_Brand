@@ -282,6 +282,14 @@
     margin: 20px;
 
 }
+.ah_001 h3 a{
+    text-decoration: none;
+    color: white;
+}
+.ah_001 h3 a:hover{
+    color: #03a9f4;
+}
+
 .ah_001{
     display: flex;
     flex-direction: column;
@@ -484,4 +492,9 @@
     font-size: 40px;
     padding: 10px;
  
+}
+.main_blog_end button>a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
 }
