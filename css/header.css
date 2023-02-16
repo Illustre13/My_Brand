@@ -127,8 +127,9 @@ header:hover{
   display: none;
   position: fixed;
   right: 0;
-  bottom: 0;
+  top: 0;
   cursor: pointer;
+  font-size: 50px;
 }
 .sidepanel  {
   height: 100%;
@@ -191,4 +192,26 @@ list-style-type: none;
 }
 .pro_image{
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 390px) {
+header{
+  width: 0px;
+}
+  .nav-bar{
+  display: none;
+}
+#menu_scrolling{
+    display: block;
+    position: fixed;
+    right: 760px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+header{
+  border-bottom: none;
+
+}
 }
