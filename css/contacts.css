@@ -124,3 +124,124 @@
 
 
 }
+/*Mobile Design*/
+@media only screen and (max-width: 390px) {
+
+    .contacts{
+        height: auto;  
+        padding-left: 5px;
+    }
+    .contacts_section{
+        width: 20rem;
+        height: auto;
+        margin: auto;
+        background-color: rgb(26, 36,46);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 5px;
+    
+    }
+    .cs_001{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+    
+    }
+    .cs_002{
+        position: relative;
+        top: -10px;
+        margin: 0px 10px;
+        width: auto;
+        height: 2px;
+        background-color: black;
+    }
+    .cs_003{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .cs_003_part{
+        margin: 0px 0px 10px 0px;
+    }
+    .cs_004{
+        display: grid;
+        grid-template-columns: 5rem 12rem;
+        background-color: black;
+        width: 18rem;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .cs_004 > i{
+        padding: 5px 5px 5px 0px;
+        font-size: 20px;
+        margin: auto;
+        width: 10px;
+        text-align: center;
+    }
+    .cs_005{
+        padding: 5px;
+    }
+    .cs_005 >p{
+        font-weight: 5;
+        font-size: 10px;
+    }
+    .cs_005 h1{
+        font-size: 15px;
+    }
+    .cs_005 a{
+        color: white;
+        text-decoration: none;
+    }
+    .cs_names{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 5px;
+    }
+    .cs_names >input{
+        width: 18rem;
+        height: 2rem;
+        padding-left: 5px;
+    }
+    
+    .cs_email > input{
+        background-color: black;
+        width: 18rem;
+        height: 2rem;
+        padding-left: 5px;
+    }
+    
+    .cs_007{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 5px;
+        padding: 0px;
+        height: auto;
+       
+    
+    }
+    .cs_007 > textarea{
+        background-color: black;
+        color: white;
+        width: 18rem;
+        height: 10rem;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .cs_send{
+        background-color: black;
+        display: grid;grid-template-columns: 5rem 2rem;
+        justify-content: center;
+        margin: auto;
+        width: 10rem;
+        height: 5rem;
+    
+    }
+}
