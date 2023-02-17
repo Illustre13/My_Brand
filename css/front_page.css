@@ -193,5 +193,25 @@
   }
 
 
+  .scrollDown{
+    display: block;
+    position: relative;
+    right: -330px;
+    top: -230px;
+    
 
+}
+.scrollDown:hover{
+    opacity: 0.4;
+    cursor:pointer;
+}
+.scrollDown a{
+    text-decoration: none;
+}
+.scrollDown i{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+ 
+}
   }

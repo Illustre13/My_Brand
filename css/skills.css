@@ -60,7 +60,7 @@ font-size: 40px;
 }
 
 /*Skills page Responsiveness [RWD]*/
- 
+@media only screen and (max-width: 390px) {
 .skill_holder{
     width: 22rem;
     height: auto;
@@ -121,4 +121,5 @@ font-size: 25px;
     border-radius: 20px;
     transition: .2s;
     
+}
 }

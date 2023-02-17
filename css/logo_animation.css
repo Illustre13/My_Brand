@@ -59,6 +59,7 @@
 .logo_animation{
   margin-left: 80px;
   margin-top: -2px;
+  z-index: 1;
 }
 .logo_animation h2{
   font-size: 2.3em;
