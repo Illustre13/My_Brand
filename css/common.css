@@ -23,6 +23,8 @@ body{
    
 body{
    padding: 0px 10px 0px 10px;
+   width: 22rem;
+   background-color: rgb(0, 0, 0);
 }
 .section-header{
    font-size: 35px;
