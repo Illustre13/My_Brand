@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
+  <h1>Create a New Blog</h1>
+  <form>
+    <input type="text" name="title" required placeholder="Blog title">
+    <textarea name="body" required placeholder="Blog body"></textarea>
+    <div class="aa_section001">
+        <div class="label_section">
+          <label for="category">Topic Category </label>
+        </div>
+        <select name="category">
+          <option value="Programming">Programming</option>
+          <option value="Life Style">Life Style</option>
+          <option value="Sport">Sport</option>
+          <option value="News">News</option>
+          <option value="Technology">Technology</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+
+      <div class="aa_section001">
+        <div class="label_section">
+          <label for="upload">Upload Images: </label>
+        </div>
+        <input type="file" name="files" />
+      </div>
+    <button>Create</button>
+  </form>
+  <script src="/script/json_create.js"></script>
+</body>
+</html>
