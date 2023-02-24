@@ -1,92 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/common.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/css/logo_animation.css">
-    <link rel="stylesheet" type="text/css" href="/css/login_page.css">
-    <script src="https://kit.fontawesome.com/aa4811ab5f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login - Page</title>
-</head>
-<body>
-    <div class="container">
-        <header id="menu_header" >
-        
-                <div class="logo_animation">
-                <a href="index.html">
-                    <h2>BERTIN</h2>
-                    <h2>BERTIN</h2>
-                </a> 
-                </div>
-                <div class="nav-bar">
-                    <ul class="menu">
-                        <li><a class="active" id="menu001" href="index.html">Home</a></li>
-                        <li><a href="#ABOUT" id="menu002">About</a></li>
-                        <li><a href="#SKILLS" id="menu003">Skills</a></li>
-                        <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
-                        <li><a href="#BLOG" id="menu005"> Blog</a></li>
-                        <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
-                    </ul>
-                    <div class="image-header">
-                        <img src="images/me3.jpg" onclick="imageClick()" class= "dropclick" alt="profile picture">
-                        <div id="myprofile" class="dropdown-content">
-                            <ul class="profile-content1">
-                                <li><a href="">Photo Gallery</a></li> 
-                            </ul>
-                            <ul class="profile-content2">
-                                <a href="mailto:ndahayosibertin17@gmail.com"><li><i class="fa-solid fa-envelope"></i></li></a>
-                                <a href="teleto: +250786949188"><li><i class="fa-solid fa-phone"></i></li></a>
-                                <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
-                                <a href="https://twitter.com/ndahayo_s" target="_blank"><li><i class="fa-brands fa-twitter"></i></li> </a>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            
-                <div id="menu_scrolling">
-                    <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
-                </div>
-        </header> 
-        <div class="login_container">
-            <img src="/images/3d_login.png" alt="Login Image">
-            <div class="login_section">
-                <h1>Welcome Back</h1>
-                <p class="login_desc">To keep connected with me please <br>signin using your email and password.🔔</p>
-                <div class="sub">
-                    <div>
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div>
-                        <input type="email" class="sub_email" name="email" placeholder="Enter your Email">
-                    </div>
-                </div>
-                <div class="sub">
-                    <div>
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <div>
-                        <input type="password" class="sub_pass" name="password" placeholder="Enter your Password">
-                    </div>
-                </div>
-                <div class="remember_forgot">
-                    <div class="remember">
-                        <i class="fa-solid fa-check-to-slot"></i>
-                        <p> Remember Me</p>
-                    </div>
-                    <p>Forgot Password</p>
-                </div>
-                <div class="button_div">
-                    <a href="dashboard.html"><button>Login Now</button></a>
-                </div>
-                <p class="login_p_last">Don’t have an account, SignUp <a href="signup_page.html">here<br></a>
-                    or Login as a Guest <a href="dashboard.html">here.</a></p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="/css/logo_animation.css" />
+    <link rel="stylesheet" type="text/css" href="/css/login_page.css" />
+    <script
+      src="https://kit.fontawesome.com/aa4811ab5f.js"
+      crossorigin="anonymous"
+    ></script>
 
-        </div>  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa4811ab5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/profile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/hero_text.js"></script>
+    <script src="script/skills.js"></script>
+    <script src="script/scroll.js"></script>
+    <script src="script/general.js"></script>
+
+    <title>Login - Page</title>
+  </head>
+  <body>
+    <div class="mobile_nav">
+        <div class="logo_animation">
+          <a href="index.html">
+            <h2>BERTIN</h2>
+            <h2>BERTIN</h2>
+          </a>
+        </div>
+        <div id="menu_scrolling">
+          <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+        </div>
+      </div>
+    <div class="container">
+      <header id="menu_header">
+   
+        <div class="nav-bar">
+          <ul class="menu">
+            <li><a class="active" id="menu001" href="index.html">Home</a></li>
+            <li><a href="#ABOUT" id="menu002">About</a></li>
+            <li><a href="#SKILLS" id="menu003">Skills</a></li>
+            <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
+            <li><a href="#BLOG" id="menu005"> Blog</a></li>
+            <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
+          </ul>
+          <div class="image-header">
+            <img
+              src="images/me3.jpg"
+              onclick="imageClick()"
+              class="dropclick"
+              alt="profile picture"
+            />
+            <div id="myprofile" class="dropdown-content">
+              <ul class="profile-content1">
+                <li><a href="">Photo Gallery</a></li>
+              </ul>
+              <ul class="profile-content2">
+                <a href="mailto:ndahayosibertin17@gmail.com"
+                  ><li><i class="fa-solid fa-envelope"></i></li
+                ></a>
+                <a href="teleto: +250786949188"
+                  ><li><i class="fa-solid fa-phone"></i></li
+                ></a>
+                <a
+                  href="https://linkedin.com/in/ndahayo-s-bertin"
+                  target="_blank"
+                  ><li><i class="fa-brands fa-linkedin-in"></i></li
+                ></a>
+                <a href="https://twitter.com/ndahayo_s" target="_blank"
+                  ><li><i class="fa-brands fa-twitter"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="login_container">
+        <img src="/images/3d_login.png" alt="Login Image" />
+        <div class="login_section">
+          <h1>Welcome Back</h1>
+          <p class="login_desc">
+            To keep connected with me please <br />signin using your email and
+            password.🔔
+          </p>
+          <div class="sub">
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <input
+                type="email"
+                class="sub_email"
+                name="email"
+                placeholder="Enter your Email"
+              />
+            </div>
+          </div>
+          <div class="sub">
+            <div>
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div>
+              <input
+                type="password"
+                class="sub_pass"
+                name="password"
+                placeholder="Enter your Password"
+              />
+            </div>
+          </div>
+          <div class="remember_forgot">
+            <div class="remember">
+              <i class="fa-solid fa-check-to-slot"></i>
+              <p>Remember Me</p>
+            </div>
+            <p>Forgot Password</p>
+          </div>
+          <div class="button_div">
+            <a href="dashboard.html"><button>Login Now</button></a>
+          </div>
+          <p class="login_p_last">
+            Don’t have an account, SignUp
+            <a href="signup_page.html">here<br /></a> or Login as a Guest
+            <a href="dashboard.html">here.</a>
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

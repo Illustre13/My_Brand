@@ -129,3 +129,139 @@ img{
     background-color: #D9D9D9;
     margin: auto;
 }
+/*Media Screen Less Than 390 Responsiveness*/
+@media only screen and (max-width: 390px) {
+ 
+.apart{
+    height: 900px;
+    width: 5px;
+    background-color: #D9D9D9;
+    position: absolute;
+    right: 50%;
+}
+.timeline_components{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+.timeline_components_001{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.tc_box{  
+    color: black;
+    background-color: #D9D9D9;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-overflow: clip;
+    text-align: center;
+    width: 150px;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+    left: 7rem;
+    padding: 0px;
+}
+.tc_box::before{
+    content: " ";
+    margin: 30px;
+    position: relative;
+    height: 0;
+    position: absolute;
+    top: -25px;
+    width: 0;
+    z-index: -1;
+    left: -40px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #D9D9D9 transparent transparent;
+}
+.tc_box_001{  
+    color:black;
+    background-color: #D9D9D9;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-overflow: clip;
+    text-align: center;
+    width: 130px;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+    right: 7rem;
+    padding: 0px;
+
+}
+.tc_box_001::before{
+    content: " ";
+    margin: 30px;
+    position: relative;
+    top: 5px;
+    height: 0;
+    position: absolute;
+    top: -25px;
+    width: 0;
+    z-index: -1;
+    right: -40px;
+    border: medium solid white;
+    border-width: 10px 0px 10px 10px;
+    border-color: transparent transparent transparent #D9D9D9;
+}
+.tc_box > h2{
+    font-size: 15px;
+}
+.tc_box_001 > h2{
+    font-size: 15px;
+}
+.tc_box > p{
+    font-size: 12px;
+    color: black;
+}
+.tc_box_001 > p{
+    font-size: 12px;
+    color: black;
+}
+.tc_box > h3{
+    font-size: 12px;
+    color: #03a9f4;
+}
+.tc_box_001 > h3{
+    font-size: 12px;
+    color: #03a9f4;
+}
+.tc_date{
+    position: absolute;
+    top: 10px;
+    right: 60%;
+}
+.tc_date_001{
+    position: absolute;
+    top: 5px;
+    left: 59%;
+}
+.tc_date >p{
+    font-size: 12px;
+}
+.tc_date_001 >p{
+    font-size: 12px;
+}
+.tc_img{
+position: absolute;
+    top: 25px;
+    right: 44%;
+   
+}
+img{
+    font-size: 10px;
+    width: 50px;
+    height: 40px;
+    background-color: #D9D9D9;
+    margin: auto;
+}
+}
