@@ -294,11 +294,11 @@
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .ah_001 h3{
     font-size: 40px;
-    height: 60px;
+    height: auto;
 }
 .ah_001 h3:hover, .ah_001 p:hover{
     color: #03a9f4;
@@ -309,7 +309,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
+    margin: 5px;
 }
 .hashtags{
     display: grid;
@@ -319,6 +319,17 @@
 }
 .read_date{
    margin: 0px 10px;
+}
+.read-more{
+    display: block;
+    position: relative;
+    top: 0;
+    left: -120px;
+    
+   
+}
+.read-more a{
+    color: #03a9f4;
 }
 
 /* CSS for the side bar section*/
