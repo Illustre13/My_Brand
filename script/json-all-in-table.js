@@ -1,6 +1,6 @@
 // javascript for index.html
 // javascript for index.html
-const container = document.querySelector('.recent_blog');
+const container = document.querySelector('.all_blogs');
 const searchForm = document.querySelector('.search');
 
 const renderPosts = async (term) => {
@@ -13,9 +13,8 @@ const renderPosts = async (term) => {
     let template = '';
     posts.forEach(post => {
         template += `
-            <div class="article_holder">
-                <img src="${post.base64}" alt="article image"/>
-                
+            <div class="blog_holder">
+                <p>${post.id}</p>
                 <div class="ah_001">
                     <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
                    

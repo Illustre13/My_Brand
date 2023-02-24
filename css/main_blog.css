@@ -169,7 +169,7 @@
 .ah_misc{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     color: #d9d9d9;
     height: 20px;
     font-size: 10px;
@@ -203,27 +203,56 @@
     font-size:10px ;
 }
 .read-more{
-    margin-left: 30px;
-    display: flex;
-    flex: row;
-}
-.crcle{
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: black;
+    padding-left: 0px;
+    display: block;
+    position: relative;
+    left: -6px;
+    width: 10rem;
+    margin-right: -20px;
+    
 }
 .read-more a{
+    font-size: 20px;
+    background-color: #1A242E;
+    border-radius: 100px;
     text-decoration: none;
-    color: white;
+    color: #03a9f4;
     padding: 10px;
-    padding: 100px 0px 0px 100px;
+    margin: auto;
 
 }
 .read-more a:hover{
+    color: white;
+    cursor: pointer;
+}
+.ed_read-more{
+    padding-left: 0px;
+    display: block;
+    position: relative;
+    left: 50px;
+    width: 10rem;
+    margin-right: -20px;
+    
+}
+.ed_read-more a{
+    font-size: 20px;
+    background-color: black;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: auto;
+
+}
+.ed_read-more a:hover{
     color: #03a9f4;
     cursor: pointer;
 }
+.crcle{
+
+    background-color: red;
+}
+
 .show-more{
     margin: 20px;
     width: 10em;
@@ -267,6 +296,29 @@
     font-size: 15px;
     color: #03a9f4;
     top: 100px;
+  }
+  .admin_search input{
+    width: 80%;
+    height: 5em;
+    border-radius: 30px;
+    padding: 5px 20px 5px 20px;
+    margin: auto;
+    background-color: #1A242E;
+    color: #d9d9d9;
+  }
+
+  .admin_search button{
+    position: relative;
+    left: -90px;
+    font-size: 30px;
+    bottom: -5px;
+    background-color: #1A242E;
+    border: none;
+
+  }
+  .admin_search i:hover{
+    color: #03a9f4;
+    cursor: pointer;
   }
 .article_holder{
     display: flex;

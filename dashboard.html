@@ -79,19 +79,31 @@
         </div>
         <div class="admin_side">
           <div class="admin_side_001">
-            <div class="admin_search">
-              <input
-                type="search"
-                name="admin_search"
-                placeholder="Search article"
-              />
-              <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="admin_side_004">
+              <form class="search">
+                <div class="admin_search">
+                  <input
+                    type="search"
+                    name="admin_search"
+                    placeholder="Search Blog"
+                  />
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+              
+              <div class="add_article">
+                <a href="json_create_blog.html">
+                  <div><p>Add New Blog</p></div>
+                  <div><i class="fa-solid fa-square-plus"></i></div>
+                </a>
+              </div>
+              
             </div>
-            <div class="add_article">
-              <a href="add_article.html">
-                <div><p>Add New Article</p></div>
-                <div><i class="fa-solid fa-square-plus"></i></div>
-              </a>
+
+         
+            <h2>All Blogs</h2>
+            <div class="all_blogs">
+              <!-- inject blogs here from js -->
             </div>
             <div class="Recent_Table">
               <h2>Recent Article</h2>
@@ -712,6 +724,8 @@
             </div>
           </div>
         </div>
+     
+        
       </div>
       <div class="scrollDown">
         <i
@@ -721,5 +735,7 @@
         ></i>
       </div>
     </div>
+    <script src="script/json-all-in-table.js"></script>
   </body>
+
 </html>
