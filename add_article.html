@@ -13,10 +13,20 @@
       src="https://kit.fontawesome.com/aa4811ab5f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script/profile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/hero_text.js"></script>
+    <script src="script/skills.js"></script>
+    <script src="script/scroll.js"></script>
+    <script src="script/general.js"></script>
+    <script
+      src="https://kit.fontawesome.com/aa4811ab5f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Add Article</title>
   </head>
   <body>
-    <header id="menu_header">
+    <div class="mobile_nav">
 
       <div class="logo_animation">
         <a href="index.html">
@@ -24,6 +34,12 @@
           <h2>BERTIN</h2>
         </a>
       </div>
+      <div id="menu_scrolling">
+        <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+      </div>
+    </div>
+    <header id="menu_header">
+     
       <div class="nav-bar">
         <ul class="menu">
           <li><a class="active" id="menu001" href="index.html">Home</a></li>
@@ -60,10 +76,6 @@
             </ul>
           </div>
         </div>
-      </div>
-
-      <div id="menu_scrolling">
-        <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
       </div>
     </header>
     <div class="aa_container">

@@ -23,7 +23,7 @@
     font-size: 25px;
     text-align:justify;
     float: left;
-    height: 90vh;
+    height: 100vh;
     user-select: none;
     border-left: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
@@ -41,7 +41,7 @@
     background-position: center;
    background-size: contain;
    background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     width: 30%;
     float: right;
     padding-left: 200px;
@@ -92,4 +92,76 @@
     border: 1px solid #ffffff;
     border-left: 2px solid #03a9f4;
     border-width: 10px;
+}
+
+@media only screen and (max-width: 390px) {
+    
+    .aboutme{
+        color: white;
+        width: 100%;
+        background-position: 100px;
+    }
+    .about_holder{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .aboutme_text{
+        color: White;
+        width: 22rem;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 5px 0px 5px;
+        font-size: 15px;
+        height: 25rem;
+    }
+    .pa_text::first-letter {
+            font-size: 20px;
+            font-weight: 1000;
+          } 
+    .aboutme_profile_section{
+        background-image: url(/images/my_profile.png);
+        height: 20rem;
+        width: 10rem; 
+    }
+    
+    .about_cv{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .about_cv_hire_me{
+        width: 10rem;
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        border: 1px solid #03a9f4;
+        border-radius: 50px;
+        padding: 5px;
+        transition: box-shadow .5s;
+        margin: 10px 2px;
+        border-left: 1px solid white;
+        border-width: 5px;
+       
+      }
+    .about_cv_hire_me h6{
+        font-size: 15px;
+        font-weight: 400px;
+        color: white;
+    }
+    .about_cv_hire_me i{
+        margin-right: 10px;  
+        padding-left: 5px;
+    }
+    .about_cv_hire_me a{
+        color: white;
+        text-decoration: none;
+    }
+    .about_cv_hire_me:hover{
+        border: 1px solid #ffffff;
+        border-left: 1px solid #03a9f4;
+        border-width: 5px;
+    }
 }
