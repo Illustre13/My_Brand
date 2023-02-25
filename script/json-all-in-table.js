@@ -14,27 +14,26 @@ const renderPosts = async (term) => {
     posts.forEach(post => {
         template += `
             <div class="blog_holder">
-                <p>${post.id}</p>
+                <div class="img_sctn">
+                <img src="${post.base64}" alt="article_image">
+                </div>
                 <div class="ah_001">
                     <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
-                   
-                    <p>${post.body.slice(0, 200)}</p>
+                
+                    <p>${post.body.slice(0, 50)}<a href="/json_details.html?id=${ post.id }">...Read more</a></p>
                     <div class="ah_misc">
-                        <div class="hashtags">
-                            <p>#${post.category}</p>
-                            <p>#${post.category}</p>
-                        
+                        <div class="category">
+                            <p>${post.category}</p>                        
                         </div>
                         <div class="read_date">
                             <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
                             <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
                         </div>
-                        <div class="read-more">
-                            
-                            <a href="/json_details.html?id=${ post.id }">Read more...</a>
-                   </div>
                     </div>
-                    
+                    <div class="controller">
+                        <button class="delete" onclick="deleteBtn()">Delete </button>
+                        <button>Edit</button>
+                    </div>
                     
                 </div>
             </div>
@@ -43,8 +42,22 @@ const renderPosts = async (term) => {
     container.innerHTML = template;
 }
 
+
+
 searchForm.addEventListener('submit', e => {
     e.preventDefault();
     renderPosts(searchForm.admin_search.value.trim())
 })
+
 window.addEventListener('DOMContentLoaded', () => renderPosts());
+
+function deleteBtn(){
+    const deleteBtn = document.querySelector('.delete');
+    deleteBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        await fetch(`http://localhost:3000/posts/${id}`, {
+            method: 'DELETE'
+        });
+        window.location.replace('/dashboard.html');
+    })
+}

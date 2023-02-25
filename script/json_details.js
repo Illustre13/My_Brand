@@ -9,9 +9,41 @@ const renderDetails = async () => {
     const post = await res.json();
 
     const template = `
+        <head>
+            <title>${post.title}</title>
+        </head>
         <h1>${post.title}</h1>
-        <p>${post.body}</p>
-        <p>${post.category}</p>
+        <div class="category">
+        
+            <p>${post.category}</p>
+        </div>
+        <div class="ap_img_section">
+            <img src="${post.base64}" alt="article_image">
+        </div>
+        <div class="content_section">
+            <p class="ap_content">${post.body}</p>
+        </div>
+        <div class="add_comment_share_icons">
+        <button>Add Comment <i class="fa-solid fa-comment"></i></button>
+        <div class="share_icons">
+          <p>20</p>
+          <i class="fa-regular fa-heart"></i>
+          <p>20</p>
+          <i class="fa-regular fa-comment"></i>
+          <i class="fa-solid fa-square-share-nodes ed"></i>
+        </div>
+      </div>
+      <div class="back">
+        <button><a href="main_blog.html">Back To Main Blog Page</a></button>
+      </div>
+    </div>
+    <div class="scrollDown">
+      <i
+        class="fa-solid fa-angles-up fa-bounce"
+        style="--fa-bounce-rebound: 0"
+        onclick="window.scrollTo(0,0)"
+      ></i>
+    </div>
         `
     container.innerHTML = template;
 }
