@@ -2,7 +2,7 @@
 // javascript for index.html
 const container = document.querySelector('.recent_blog');
 const searchForm = document.querySelector('.search');
-
+const editor_pick = document.querySelector('.ed_leaf_json');
 const renderPosts = async (term) => {
     let uri = 'http://localhost:3000/posts?_sort=likes&_order=desc';
     if (term) {
@@ -22,9 +22,7 @@ const renderPosts = async (term) => {
                     <p>${post.body.slice(0, 200)}</p>
                     <div class="ah_misc">
                         <div class="hashtags">
-                            <p>#${post.category}</p>
-                            <p>#${post.category}</p>
-                        
+                            <p>${post.category}</p>
                         </div>
                         <div class="read_date">
                             <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
@@ -33,7 +31,7 @@ const renderPosts = async (term) => {
                         <div class="read-more">
                             
                             <a href="/json_details.html?id=${ post.id }">Read more...</a>
-                   </div>
+                        </div>
                     </div>
                     
                     
@@ -41,6 +39,42 @@ const renderPosts = async (term) => {
             </div>
         `
     })
+
+    /* */
+    let editor = '';
+    posts.forEach(post => {
+        editor += `
+        <div class="ed_leaf">
+            <div class="ed_img">
+            <img src="${post.base64}" alt="Editor's pick image"/>
+            </div>
+            <div class="ah_misc">
+                <div class="hashtags">
+                <p>${post.category}</p>
+                </div>
+                <div class="read_date">
+                <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                </div>
+            </div>
+            <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
+            <div class="ed_profile">
+                <div class="ed_profile_img">
+                    <img src="/images/me3.jpg" />
+                </div>
+                <div class="ed_profile_name">
+                    <h3>Bertin NDAHAYO</h3>
+                    <p>25 November 2022</p>
+                </div>
+                <div class="ed_read-more">
+                    <div class="circle"></div>
+                    <a href="/json_details.html?id=${ post.id }">Read more...</a>
+                </div>
+            </div>
+        </div>
+        `
+    })
+    /* */
+    editor_pick.innerHTML = editor;
     container.innerHTML = template;
 }
 

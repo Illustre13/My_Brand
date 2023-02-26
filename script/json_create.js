@@ -3,6 +3,8 @@ var outImage ="imagenFondo";
 var image=new Image();
 var srcData;
 var test = "Test";
+const date_published = new date();
+let date_format = date_published.getday();
 function preview_2(obj)
 {
 	if (FileReader)
