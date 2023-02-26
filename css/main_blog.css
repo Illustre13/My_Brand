@@ -225,6 +225,11 @@
     color: white;
     cursor: pointer;
 }
+.ed_leaf_json{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
 .ed_read-more{
     padding-left: 0px;
     display: block;
@@ -361,13 +366,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
-}
+    margin: 0px 0px 10px 0px}
 .hashtags{
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-
+    grid-template-columns: auto;
+    
+}
+.hashtags p{
+    background-color: #1A242E;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 10rem;
 }
 .read_date{
    margin: 0px 10px;
