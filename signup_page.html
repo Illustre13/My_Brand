@@ -56,17 +56,17 @@
         <div class="login_container">
             <img src="/images/3d_login.png" alt="Login Image">
             <div class="login_section">
-                <div class="error_msg">
+                <h1>Sign Up</h1>
+                <div class="error_msg" id="error_message">
                     
                 </div>
-                <h1>Sign Up</h1>
-                <form action="" method="post">
+                <form action="" method="post" id="signUpForm">
                     <div class="sub">
                         <div>
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <div>
-                            <input type="text" class="sub_uname" name="uname" placeholder="Enter your User Name">
+                            <input type="text" class="sub_uname" name="uname" id="uname" placeholder="Enter your User Name">
                         </div>
                     </div>
                     <div class="sub">
@@ -74,7 +74,7 @@
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div>
-                            <input type="email" class="sub_email" name="email" placeholder="Enter your Email">
+                            <input type="email" class="sub_email" name="email" id="email" placeholder="Enter your Email">
                         </div>
                     </div>
                     <div class="sub">
@@ -82,7 +82,7 @@
                             <i class="fa-solid fa-lock"></i>
                         </div>
                         <div>
-                            <input type="password" class="sub_pass" name="password" placeholder="Enter your Password">
+                            <input type="password" class="sub_pass" name="password" id="password_001" placeholder="Enter your Password">
                         </div>
                     </div>
                     <div class="sub">
@@ -90,7 +90,7 @@
                             <i class="fa-solid fa-lock"></i>
                         </div>
                         <div>
-                            <input type="password" class="sub_pass" name="password" placeholder="Confirm Password">
+                            <input type="password" class="sub_pass" name="confirm_password"id="confirm_password" placeholder="Confirm Password">
                         </div>
                     </div>
     
@@ -103,7 +103,6 @@
                     </div>
                     <div class="button_div">
                         <input type="submit" value="Sign Up" name="signup_btn">
-                       <a href="login_page.html"><button>Sign Up</button></a>
                     </div>
 
                 </form>
@@ -113,5 +112,6 @@
 
         </div>  
     </div>
+    <script src="script/json_signup.js"></script>
 </body>
 </html>

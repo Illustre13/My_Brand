@@ -14,12 +14,14 @@ img{
 }
 .login_section{
     border: 1px solid white;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     width: 500px;
 }
 .error_msg{
     color: red;
+    text-align: left;
+    padding-left: 10px;
     
 }
 .button_div input[type=submit]{
@@ -39,6 +41,7 @@ img{
 .login_desc{
     font-size: 15px;
 }
+
 .sub{
     display: flex;
     flex-direction: row;
@@ -48,7 +51,7 @@ img{
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    height: 30px;
+    height: 25px;
 }
 .sub i{
     font-size: 20px;
