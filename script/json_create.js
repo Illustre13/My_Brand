@@ -1,6 +1,6 @@
 let article_id = new URLSearchParams(window.location.search).get("id");
 
-var outImage ="imagenFondo";
+var outImage =document.getElementById("imagenFondo");
 var image=new Image();
 var srcData;
 var test = "Test";
@@ -21,7 +21,8 @@ async function call_article() {
 form.title.value = article.title;
 form.category.value = article.category;
 form.body.value = article.body;
-document.getElementById(imagenFondo).src = article.base64
+form.imagenFondo.src = article.base64;
+form.file.value = "Already Uploaded"
 
 
 
@@ -39,12 +40,13 @@ function preview_2(obj)
         srcData = e.target.result;
        // console.log(srcData)
 		image.onload = function () {
-			document.getElementById(outImage).src=image.src;
+			form.imagenFondo.src=image.src;
 		};
         image.onload = function () {
             console.log("HI HI HI");
             console.log(srcData);
             const form = document.querySelector('form');
+            form.imagenFondo.src = srcData;
             
             if(article_id !==null){
               const createPost = async (e) => {
