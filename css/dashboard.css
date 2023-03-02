@@ -316,10 +316,17 @@ table a:hover{
   .blog_holder{
     border-radius: 10px;
     width: 20rem;   
+    background-color:black;
     box-shadow: 0 4px 8px 0 rgba(5, 130, 255, 0.2), 0 6px 20px 0 rgba(8, 182, 212, 0.19); 
   }
-  .blog_holder:hover{  
+  .blog_holder:hover{
+    background-color: #1A242E;  
     box-shadow: 0 4px 8px 0 rgba(26, 36, 46, 0.2), 0 6px 20px 0 rgba(5, 32, 212, 0.19); 
+  }
+  .img_sctn{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 10px 10px 0px 0px;
   }
   .img_sctn img{
     width: 20rem;
@@ -330,7 +337,8 @@ table a:hover{
     padding: 5px;
   }
   .ah_001 h3{
-    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
   }
   .ah_001 h3 a{
     text-decoration: none;
@@ -347,6 +355,9 @@ table a:hover{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+  }
+  .ah_misc{
+    background-color: black;
   }
   .category{
     
@@ -368,12 +379,12 @@ table a:hover{
     padding: 5px;
     border: 1px solid white;
     border-radius: 5px;
-    width: 3rem;
+    width: 4rem;
     text-align: center;
   }
 
   .controller button:hover{
-    background-color: #1A242E;
+    background-color: rgba(250, 250, 250,.8);
     cursor: pointer;
     
   }

@@ -156,14 +156,25 @@
     width: 500px;
     height: 500px;
     background-color: #1A242E;
-    padding: 10px;
+    
     border-radius: 20px;
     margin: 20px;
+}
+.ed_header h3 a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    font-size: 25px;
+
+}
+.ed_img{
+    width: 500px;
+    height: 300px;
 }
 .ed_img img{
     width: 500px;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     margin: auto;
 }
 .ah_misc{
@@ -178,8 +189,7 @@
 .hashtags{
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 10px;
-    column-gap: 10px;
+    margin: -20px 0px 0px -10px;
     
 }
 .ed_title{

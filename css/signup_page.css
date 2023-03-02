@@ -18,6 +18,9 @@ img{
     margin: 20px;
     width: 500px;
 }
+.error_msg{
+    color: red;
+}
 .login_section h1{
     font-size: 35px;
 }
@@ -57,6 +60,17 @@ img{
     display: flex;
     flex-direction: row;
     
+}
+.button_div input[type=submit]{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    width: 150px;
+    border-radius: 10px;
+}
+.button_div input[type=submit]:hover{
+    background-color: #03a9f4
 }
 .button_div{
     margin: 5px;

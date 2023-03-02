@@ -2,7 +2,7 @@
 // javascript for index.html
 const container = document.querySelector('.all_blogs');
 const searchForm = document.querySelector('.search');
-
+const side_popular_post = document.querySelector('.side_popular_json');
 const renderPosts = async (term) => {
     let uri = 'http://localhost:3000/posts?_sort=likes&_order=desc';
     if (term) {
@@ -31,14 +31,48 @@ const renderPosts = async (term) => {
                         </div>
                     </div>
                     <div class="controller">
-                        <button class="delete" onclick="deleteBtn()">Delete </button>
-                        <button>Edit</button>
+                        <button class="delete" onclick="deleteBtn(${post.id})">Delete </button>
+                        <button class="edit" onclick="window.location = '/json_create_blog.html?id=${post.id}'">Edit</button>
                     </div>
                     
                 </div>
             </div>
         `
     })
+    /* Generating the Popular Post's  Section Content*/
+    let popular_post = '';
+    posts.forEach(post => {
+        popular_post += `
+        <div class="popular">
+                <img src="/images/me3.jpg" alt="Popular_Posts" />
+                <div class="popular_001">
+                  <h4>${post.title}</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>${post.category}</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        `
+    })
+    /* */
+    side_popular_post.innerHTML = popular_post;
     container.innerHTML = template;
 }
 
@@ -51,13 +85,14 @@ searchForm.addEventListener('submit', e => {
 
 window.addEventListener('DOMContentLoaded', () => renderPosts());
 
-function deleteBtn(){
-    const deleteBtn = document.querySelector('.delete');
-    deleteBtn.addEventListener('click', async (e) => {
-        e.preventDefault();
+async function deleteBtn(id) {
+    //const deleteBtn = document.querySelector('.delete');
+    //deleteBtn.addEventListener('click', async (e) => {
+      //  e.preventDefault();
         await fetch(`http://localhost:3000/posts/${id}`, {
             method: 'DELETE'
         });
-        window.location.replace('/dashboard.html');
-    })
+       // window.location.replace('/dashboard.html');
+    
 }
+
