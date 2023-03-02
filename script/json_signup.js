@@ -11,9 +11,7 @@ let emailExists = async (email)=>{
     return true
 }
 
-let error_message = document.getElementById('error_message')
-//let title = document.getElementById('form_title')
-
+let error_message = document.getElementById('error_message');
 const form = document.getElementById('signUpForm');
 const createUser = async (e) => {
     e.preventDefault();
@@ -22,23 +20,40 @@ const createUser = async (e) => {
         let emExists = await emailExists(form.email.value)
         console.log( 'Hey', emExists)
         if (emExists){
-            error_message.innerText = 'Email already exists, log in'
+            error_message.innerText = 'Email already exists, Go to log in'
         }else{
-
-            const doc = {
-                name: form.uname.value,
-                email: form.email.value,
-                password: form.confirm_password.value,
-                role:"user",
+            
+            if(form.email.value == "ndahayosibertin17@gmail.com"){
+                const doc = {
+                    name: form.uname.value,
+                    email: form.email.value,
+                    password: form.confirm_password.value,
+                    role:"admin",
+                }
+                await fetch('http://localhost:3000/users', {
+                    method: 'POST',
+                    body: JSON.stringify(doc),
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                user_details = {name: form.uname.value,email: form.email.value,password: form.password_001.value, role: 'user'}
+                localStorage.setItem('user',JSON.stringify(user_details))
+                window.location.replace('/login_page.html');
+            }else{
+                const doc = {
+                    name: form.uname.value,
+                    email: form.email.value,
+                    password: form.confirm_password.value,
+                    role:"user",
+                }
+                await fetch('http://localhost:3000/users', {
+                    method: 'POST',
+                    body: JSON.stringify(doc),
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                user_details = {name: form.uname.value,email: form.email.value,password: form.password_001.value, role: 'user'}
+                localStorage.setItem('user',JSON.stringify(user_details))
+                window.location.replace('/login_page.html');
             }
-            await fetch('http://localhost:3000/users', {
-                method: 'POST',
-                body: JSON.stringify(doc),
-                headers: { 'Content-Type': 'application/json' }
-            });
-            user_details = {name: form.uname.value,email: form.email.value,password: form.password_001.value, role: 'user'}
-            localStorage.setItem('user',JSON.stringify(user_details))
-            window.location.replace('/login_page.html');
         }
     }else{
         error_message.innerText = 'Invalid Email'

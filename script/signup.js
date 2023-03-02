@@ -32,8 +32,6 @@ const form = document.getElementById('signUpForm');
             }else{
                 if(form.email.value == "ndahayosibertin17@gmail.com"){
                     const createUser = async (e) => {
-                        let emExists = await emailExists(form.email.value)
-                        console.log( 'Hey', emExists)
                     e.preventDefault();
                     const doc = {
                         name: form.uname.value,

@@ -77,15 +77,17 @@
       <div class="login_container">
         <img src="/images/3d_login.png" alt="Login Image" />
         <div class="login_section">
-          <div class="error_msg">
-            
-        </div>
+          
           <h1>Welcome Back</h1>
           <p class="login_desc">
             To keep connected with me please <br />signin using your email and
             password.🔔
           </p>
-          <form action="" method="post">
+         
+          <form action="" method="post" id="logInForm">
+            <div class="error_msg" id="error_message">
+            
+            </div>
             <div class="sub">
               <div>
                 <i class="fa-solid fa-envelope"></i>
@@ -95,6 +97,7 @@
                   type="email"
                   class="sub_email"
                   name="email"
+                  id="email"
                   placeholder="Enter your Email"
                 />
               </div>
@@ -108,6 +111,7 @@
                   type="password"
                   class="sub_pass"
                   name="password"
+                  id="login_password"
                   placeholder="Enter your Password"
                 />
               </div>
@@ -133,5 +137,6 @@
         </div>
       </div>
     </div>
+    <script src="script/json_login.js"></script>
   </body>
 </html>

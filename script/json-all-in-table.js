@@ -86,13 +86,10 @@ searchForm.addEventListener('submit', e => {
 window.addEventListener('DOMContentLoaded', () => renderPosts());
 
 async function deleteBtn(id) {
-    //const deleteBtn = document.querySelector('.delete');
-    //deleteBtn.addEventListener('click', async (e) => {
-      //  e.preventDefault();
+    
         await fetch(`http://localhost:3000/posts/${id}`, {
             method: 'DELETE'
         });
-       // window.location.replace('/dashboard.html');
     
 }
 
