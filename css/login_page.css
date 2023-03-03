@@ -52,6 +52,7 @@ img{
     padding: 10px;
     margin: 10px;
     height: 25px;
+    width: 28rem;
 }
 .sub i{
     font-size: 20px;
@@ -63,6 +64,8 @@ img{
 .sub input{
     outline: none;
     border: none;
+    height: 25px;
+    width: 26rem;
 }
 .remember_forgot{
     display: flex;

@@ -3,7 +3,7 @@ const container = document.querySelector('.recent_blog');
 const searchForm = document.querySelector('.search');
 const editor_pick = document.querySelector('.ed_leaf_json');
 const side_popular_post = document.querySelector('.side_popular_json');
-
+const blog_my_brand_var = document.querySelector('.bs_recent_blog');
 
 const renderPosts = async (term) => {
     let uri = 'http://localhost:3000/posts?_sort=likes&_order=desc';
@@ -111,9 +111,43 @@ const renderPosts = async (term) => {
         `
     })
     /* */
+    /* Recent blog section on my brand main page*/ 
+    let blog_my_brand = '';
+    posts.forEach(post => {
+        blog_my_brand += `
+            <div class="article_holder">
+                <img src="${post.base64}" alt="article image"/>
+                
+                <div class="ah_001">
+                    <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
+                   
+                    <p>${post.body.slice(0, 200)}</p>
+                    <div class="ah_misc">
+                        <div class="hashtags">
+                            <p>${post.category}</p>
+                        </div>
+                        <div class="read_date">
+                            <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                            <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                        </div>
+                        <div class="read-more">
+                            
+                            <a href="/json_details.html?id=${ post.id }">Read more...</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        `
+    })
+
+    /**/
+
     side_popular_post.innerHTML = popular_post;
     editor_pick.innerHTML = editor;
     container.innerHTML = template;
+    blog_my_brand_var.innerHTML = blog_my_brand;
 }
 
 searchForm.addEventListener('submit', e => {
