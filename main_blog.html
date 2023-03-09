@@ -9,16 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/header.css" />
     <link rel="stylesheet" type="text/css" href="/css/logo_animation.css" />
     <link rel="stylesheet" type="text/css" href="/css/footer.css" />
-    <script
-      src="https://kit.fontawesome.com/aa4811ab5f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script/profile.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script/hero_text.js"></script>
-    <script src="script/skills.js"></script>
-    <script src="script/scroll.js"></script>
-    <script src="script/general.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/contacts.css" />
     <script
       src="https://kit.fontawesome.com/aa4811ab5f.js"
       crossorigin="anonymous"
@@ -30,19 +21,16 @@
     <title>Main - Blog</title>
   </head>
   <body>
-    <div class="mobile_nav">
-
+    <header id="menu_header">
+      <!--<div class="logo">
+            <a href="index.html"><img src="images/logo3.PNG" alt="My logo"></a>
+            </div>  -->
       <div class="logo_animation">
         <a href="index.html">
           <h2>BERTIN</h2>
           <h2>BERTIN</h2>
         </a>
       </div>
-      <div id="menu_scrolling">
-        <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
-      </div>
-    </div>
-    <header id="menu_header">
       <div class="nav-bar">
         <ul class="menu">
           <li><a class="active" id="menu001" href="index.html">Home</a></li>
@@ -80,6 +68,10 @@
           </div>
         </div>
       </div>
+
+      <div id="menu_scrolling">
+        <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+      </div>
     </header>
     <div class="blog-container">
       <div class="blog-front">
@@ -90,21 +82,15 @@
           <div class="sub">
             <!--<div contentEditable=true data-text="Enter Your email here" class="sub_email_section"></div>
                     -->
-            <form action="#" method="post">
-              <div class="sub">
-                <input
-                  type="email"
-                  class="sub_email"
-                  name="email"
-                  placeholder="Enter your Email"
-                />
-                <div class="sub_button">
-                  <button>
-                    SubScribe <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
+            <input
+              type="email"
+              class="sub_email"
+              name="email"
+              placeholder="Enter your Email"
+            />
+            <div class="sub_button">
+              <button>SubScribe <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
           </div>
         </div>
         <div class="blog-front-img">
@@ -184,6 +170,7 @@
         <h2>Editor's Pick</h2>
         <h5>Featured and highly rated articles</h5>
         <div class="ed_leaf_super">
+          <!--
           <div class="ed_leaf">
             <div class="ed_img">
               <img src="/images/com.jpg" alt="editor's pick image" />
@@ -206,7 +193,7 @@
                 <h3>Bertin NDAHAYO</h3>
                 <p>25 November 2022</p>
               </div>
-              <div class="read-more">
+              <div class="ed_read-more">
                 <div class="circle"></div>
                 <p><a href="article_page.html">Read More</a></p>
               </div>
@@ -234,7 +221,7 @@
                 <h3>Bertin NDAHAYO</h3>
                 <p>25 November 2022</p>
               </div>
-              <div class="read-more">
+              <div class="ed_read-more">
                 <div class="circle"></div>
                 <p><a href="article_page.html">Read More</a></p>
               </div>
@@ -262,7 +249,7 @@
                 <h3>Bertin NDAHAYO</h3>
                 <p>25 November 2022</p>
               </div>
-              <div class="read-more">
+              <div class="ed_read-more">
                 <div class="circle"></div>
                 <p><a href="article_page.html">Read More</a></p>
               </div>
@@ -290,7 +277,7 @@
                 <h3>Bertin NDAHAYO</h3>
                 <p>25 November 2022</p>
               </div>
-              <div class="read-more">
+              <div class="ed_read-more">
                 <div class="circle"></div>
                 <p><a href="article_page.html">Read More</a></p>
               </div>
@@ -318,7 +305,7 @@
                 <h3>Bertin NDAHAYO</h3>
                 <p>25 November 2022</p>
               </div>
-              <div class="read-more">
+              <div class="ed_read-more">
                 <div class="circle"></div>
                 <p><a href="article_page.html">Read More</a></p>
               </div>
@@ -346,11 +333,15 @@
                 <h3>Bertin NDAHAYO</h3>
                 <p>25 November 2022</p>
               </div>
-              <div class="read-more">
+              <div class="ed_read-more">
                 <div class="circle"></div>
                 <p><a href="article_page.html">Read More</a></p>
               </div>
             </div>
+          </div>
+          -->
+          <div class="ed_leaf_json">
+            <!-- inject Editor here from js -->
           </div>
         </div>
       </div>
@@ -380,15 +371,166 @@
         <div class="recent">
           <h4>Recent Post</h4>
           <h6>Don't miss the latest trends</h6>
-         
+          <form class="search">
+            <div class="admin_search">
+              <input
+                type="search"
+                name="admin_search"
+                placeholder="Search Blog"
+              />
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+          <!--
+            <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="article_holder">
+            <img src="/images/com.jpg" alt="article image" />
+            <div class="ah_001">
+              <h3>
+                <a href="article_page.html"
+                  >13 path to a succesfull lifestyle</a
+                >
+              </h3>
+              <p>
+                Success is the accomplishment of certain goals you set in life.
+                Each person has different ideas of what success might look like
+                for them, like getting a certain job, earning a certain amount
+                of money or owning a house.
+              </p>
+              <div class="ah_misc">
+                <div class="hashtags">
+                  <p>#Travel</p>
+                  <p>#Lifestyle</p>
+                </div>
+                <div class="read_date">
+                  <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                  <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        --> 
           <div class="recent_blog">
-            <!-- inject recent_blog here from js -->
+            <!-- inject blogs here from js -->
           </div>
         </div>
+
         <div class="side_bar">
           <div class="side_popular">
             <h2>Popular Posts</h2>
             <div class="pp_line"></div>
+            <div class="side_popular_json">
+              <!--Inject Popular Post from the json-index.js-->
+            </div>
+             <!-- 
             <div class="popular">
               <img src="/images/a.jpg" alt="Posts" />
               <div class="popular_001">
@@ -564,6 +706,7 @@
                 </div>
               </div>
             </div>
+          -->
           </div>
           <div class="side_comments">
             <h2>Recent Comments</h2>
@@ -637,10 +780,60 @@
         </p>
       </div>
       <div class="main_blog_end">
-        <button><a href="admin_login_page.html">Admin Portal</a></button>
-        <button><a href="contactme.html">Contact Me</a></button>
+        <button><a href="login_page.html">Admin Portal</a></button>
+
+        <button><a href="#CONTACTS">Contact Me</a></button>
       </div>
     </div>
+    <section class="contacts brand_section" id="CONTACTS">
+      <h2 class="section-header" >Contact Me</h2>
+      <div class="contacts_section">
+          <div class="cs_001">
+              <div class="cs_004">
+                  <i class="fa-solid fa-phone"></i>
+                  <div class="cs_005">
+                      <h1>Call Me</h1>
+                      <p><a href="teleto:+250786949188">+250 786 949 188</a></p>
+                  </div>
+              </div>
+              <div class="cs_004">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="cs_005">
+                      <h1>Send Me an Email</h1>
+                      <p><a href="mailto:ndahayosibertin17@gmail.com">ndahayosibertin17@gmail.com</a></p>
+                  </div>
+              </div>
+              <div class="cs_004">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="cs_005">
+                      <h1>Locate Me</h1>
+                      <p><a href="https://goo.gl/maps/HabEJ49Cbf6QatdK8">Kigali - RWANDA 🇷🇼</a></p>
+                  </div>
+              </div>
+              
+
+          </div>
+          <div class="cs_002">
+
+          </div>
+          <div class="cs_003">
+              <div class="cs_names cs_003_part">
+                  <input type="text" placeholder="Enter your First Name">
+                  <input type="text" placeholder="Enter your First Name">
+              </div>
+              <div class="cs_email cs_003_part">
+                  <input type="email" placeholder="Enter your email">
+              </div>
+              <div class="cs_007 cs_003_part">
+                  <textarea class="cs_message" id="cs_message" name="message" rows="16" cols="120" placeholder="Type your message here"></textarea>
+                  <div class="cs_send">
+                      <h2>Send</h2>
+                      <i class="fa-solid fa-paper-plane"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <div class="scrollDown">
       <i
         class="fa-solid fa-angles-up fa-bounce"
@@ -651,6 +844,7 @@
     <footer id="FOOTER">
       <p>© Copyright 2023 | Powered By ITH</p>
     </footer>
+    <script src="script/json-index.js"></script>
+    <script src="script/json-editor-pick.js"></script>
   </body>
-  <script src="script/json-index.js"></script>
 </html>

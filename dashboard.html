@@ -9,16 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/logo_animation.css" />
     <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
-    <script
-      src="https://kit.fontawesome.com/aa4811ab5f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script/profile.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script/hero_text.js"></script>
-    <script src="script/skills.js"></script>
-    <script src="script/scroll.js"></script>
-    <script src="script/general.js"></script>
+
     <script
       src="https://kit.fontawesome.com/aa4811ab5f.js"
       crossorigin="anonymous"
@@ -27,21 +18,17 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="mobile_nav">
-      <div class="logo_animation">
-        <a href="index.html">
-          <h2>BERTIN</h2>
-          <h2>BERTIN</h2>
-        </a>
-      </div>
-      <div id="menu_scrolling">
-        <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
-      </div>
-    </div>
     <div class="container">
-      
       <header id="menu_header">
-
+        <!--<div class="logo">
+                <a href="index.html"><img src="images/logo3.PNG" alt="My logo"></a>
+                </div>  -->
+        <div class="logo_animation">
+          <a href="index.html">
+            <h2>BERTIN</h2>
+            <h2>BERTIN</h2>
+          </a>
+        </div>
         <div class="nav-bar">
           <ul class="menu">
             <li><a class="active" id="menu001" href="index.html">Home</a></li>
@@ -81,28 +68,47 @@
             </div>
           </div>
         </div>
+
+        <div id="menu_scrolling">
+          <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+        </div>
       </header>
+      
       <div class="dashboard_container">
         <div class="section-header_title">
           <h2>Welcome To Admin Portal</h2>
         </div>
+
         <div class="admin_side">
           <div class="admin_side_001">
-            <div class="admin_search">
-              <input
-                type="search"
-                name="admin_search"
-                placeholder="Search article"
-              />
-              <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="admin_side_004">
+              <form class="search">
+                <div class="admin_search">
+                  <input
+                    type="search"
+                    name="admin_search"
+                    placeholder="Search Blog"
+                  />
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+              
+              <div class="add_article">
+                <a href="json_create_blog.html">
+                  <div><p>Add New Blog</p></div>
+                  <div><i class="fa-solid fa-square-plus"></i></div>
+                </a>
+              </div>
+              
             </div>
-            <div class="add_article">
-              <a href="add_article.html">
-                <div><p>Add New Article</p></div>
-                <div><i class="fa-solid fa-square-plus"></i></div>
-              </a>
+
+         
+            <h2>All Blogs</h2>
+            <div class="all_blogs">
+              <!-- inject blogs here from js -->
             </div>
-            <div class="Recent_Table">
+            <!--
+              <div class="Recent_Table">
               <h2>Recent Article</h2>
               <table>
                 <tr>
@@ -241,7 +247,7 @@
                   <th>Engagement</th>
                   <th>Delete</th>
                 </tr>
-                <!--table row end-->
+                <!-- table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -268,7 +274,7 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -295,7 +301,7 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -322,7 +328,7 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -349,7 +355,7 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -376,7 +382,7 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -403,7 +409,7 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -430,7 +436,7 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
                 <tr>
                   <th rowspan="2">1</th>
                   <th rowspan="2">13 path to a successfull life...</th>
@@ -457,11 +463,14 @@
                     ></a>
                   </th>
                 </tr>
-                <!--table row end-->
+                <!--table row end
               </table>
             </div>
+            -->
+            
           </div>
           <div class="side_bar">
+            <!--
             <div class="side_popular">
               <h2>Popular Posts</h2>
               <div class="pp_line"></div>
@@ -655,85 +664,83 @@
                 </div>
               </div>
             </div>
-            <div class="side_comments">
-              <h2>Recent Comments</h2>
+            -->
+            
+            <div class="side_popular">
+              <h2>Popular Posts</h2>
               <div class="pp_line"></div>
-              <div class="comment_001">
-                <q
-                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                  laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                  ex iusto rem vitae provident eveniet!</q
-                >
-                <div class="comment_002">
-                  <img src="/images/a.jpg" alt="Comment Image" />
-                  <div class="comment_003">
-                    <h3>Bertin NDAHAYO</h3>
-                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+              <div class="side_popular_json">
+                <!--Inject Popular Post from the json-index.js-->
+              </div>
+            </div>
+              <div class="side_comments">
+                <h2>Recent Comments</h2>
+                <div class="pp_line"></div>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="comment_001">
-                <q
-                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                  laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                  ex iusto rem vitae provident eveniet!</q
-                >
-                <div class="comment_002">
-                  <img src="/images/a.jpg" alt="Comment Image" />
-                  <div class="comment_003">
-                    <h3>Bertin NDAHAYO</h3>
-                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="comment_001">
-                <q
-                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                  laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                  ex iusto rem vitae provident eveniet!</q
-                >
-                <div class="comment_002">
-                  <img src="/images/a.jpg" alt="Comment Image" />
-                  <div class="comment_003">
-                    <h3>Bertin NDAHAYO</h3>
-                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="comment_001">
-                <q
-                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                  laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                  ex iusto rem vitae provident eveniet!</q
-                >
-                <div class="comment_002">
-                  <img src="/images/a.jpg" alt="Comment Image" />
-                  <div class="comment_003">
-                    <h3>Bertin NDAHAYO</h3>
-                    <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="json_blog_section">
-
-        <form class="search">
-          <input type="text" name="term" placeholder="search term" />
-          <button type="submit">Search</button>
-        </form>
-        <div class="recent_blog">
-          <!-- inject recent_blog here from js -->
-        </div>
-        </div>
-
-       
+        </div>  
+     
+        
       </div>
       <div class="scrollDown">
         <i
@@ -743,6 +750,8 @@
         ></i>
       </div>
     </div>
+    <script src="script/json-all-in-table.js"></script>
+    <script src="script/json-index.js"></script>
   </body>
-  <script src="script/json-index.js"></script>
+
 </html>

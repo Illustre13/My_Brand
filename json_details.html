@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/header.css" />
+  <link rel="stylesheet" type="text/css" href="css/logo_animation.css" />
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/article_page.css" />
+
+  <script src="https://kit.fontawesome.com/aa4811ab5f.js" crossorigin="anonymous"></script></head>
+<body>
+  <header id="menu_header">
+    <!--<div class="logo">
+                <a href="index.html"><img src="images/logo3.PNG" alt="My logo"></a>
+                </div>  -->
+    <div class="logo_animation">
+      <a href="index.html">
+        <h2>BERTIN</h2>
+        <h2>BERTIN</h2>
+      </a>
+    </div>
+    <div class="nav-bar">
+      <ul class="menu">
+        <li><a class="active" id="menu001" href="index.html">Home</a></li>
+        <li><a href="#ABOUT" id="menu002">About</a></li>
+        <li><a href="#SKILLS" id="menu003">Skills</a></li>
+        <li><a href="#PORTOFOLIO" id="menu004"> My Work</a></li>
+        <li><a href="#BLOG" id="menu005"> Blog</a></li>
+        <li><a href="#CONTACTS" id="menu006">Contacts</a></li>
+      </ul>
+      <div class="image-header">
+        <img
+          src="images/me3.jpg"
+          onclick="imageClick()"
+          class="dropclick"
+          alt="profile picture"
+        />
+        <div id="myprofile" class="dropdown-content">
+          <ul class="profile-content1">
+            <li><a href="">Photo Gallery</a></li>
+          </ul>
+          <ul class="profile-content2">
+            <a href="mailto:ndahayosibertin17@gmail.com"
+              ><li><i class="fa-solid fa-envelope"></i></li
+            ></a>
+            <a href="teleto: +250786949188"
+              ><li><i class="fa-solid fa-phone"></i></li
+            ></a>
+            <a href="https://linkedin.com/in/ndahayo-s-bertin" target="_blank"
+              ><li><i class="fa-brands fa-linkedin-in"></i></li
+            ></a>
+            <a href="https://twitter.com/ndahayo_s" target="_blank"
+              ><li><i class="fa-brands fa-twitter"></i></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu_scrolling">
+      <i class="fa-solid fa-bars" onclick="openNav(); imageClick()"></i>
+    </div>
+  </header>
+    <div class="ap_container">
+      <div class="details">
+          <!-- inject blog details here -->
+      </div>
+  </div>
+  
+  <button class="delete">Delete</button>
+  <script src="script/json_details.js"></script>
+</body>
+</html>
