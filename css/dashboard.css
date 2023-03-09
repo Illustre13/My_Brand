@@ -9,7 +9,7 @@
 .admin_side{
     display:grid;
     grid-template-columns: auto 300px;
-    margin: 100px 10px 100px 0px;
+    margin: 50px 10px 100px 0px;
   }
 .admin_side_001{
     padding-right: 15px;
@@ -393,7 +393,36 @@ table a:hover{
     text-decoration: none;
         
   }
+/*CSS For Admin Dashboard Tabs Switching*/
+/* Style the tabs */
 
+
+  /* Style the buttons that open the tabs */
+  .tab_002, .tab_003{
+    display: none;
+  }
+  .tab-button {
+    background-color: #1A242E; 
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 5px;
+    cursor: pointer;
+    width: 12rem;
+    font-size: 15px;
+  }
+
+  /* Style the active tab button */
+  .active_tab {
+    background-color:#03a9f4;
+  }
+
+
+/**/
 
   @media only screen and (max-width: 390px) {
     .section-header_title{
