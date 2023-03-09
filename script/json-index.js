@@ -4,11 +4,11 @@ const searchForm = document.querySelector('.search');
 const editor_pick = document.querySelector('.ed_leaf_json');
 const side_popular_post = document.querySelector('.side_popular_json');
 const blog_my_brand_var = document.querySelector('.bs_recent_blog');
-
+const userList = document.querySelector('user_list');
 const renderPosts = async (term) => {
     let uri = 'http://localhost:3000/posts?_sort=likes&_order=desc';
     if (term) {
-        uri += `&q=${term}`;
+    uri += `&q=${term}`;
     }
     const res = await fetch(uri);
     const posts = await res.json();
@@ -143,7 +143,6 @@ const renderPosts = async (term) => {
     })
 
     /**/
-
     side_popular_post.innerHTML = popular_post;
     editor_pick.innerHTML = editor;
     container.innerHTML = template;
@@ -155,3 +154,33 @@ searchForm.addEventListener('submit', e => {
     renderPosts(searchForm.admin_search.value.trim())
 })
 window.addEventListener('DOMContentLoaded', () => renderPosts());
+
+
+const renderUser = async (term) => {
+    let uri = 'http://localhost:3000/users';
+    if (term) {
+    uri += `&q=${term}`;
+    }
+    const res = await fetch(uri);
+    const user = await res.json();
+    
+     /* */
+    /*User's List */ 
+    let User = '';
+    user.forEach(post => {
+        User += `
+            <div class="list">
+            <table>
+            <th>
+            <tr>Name</tr>
+            <tr>Email</tr>
+            <tr>Role</tr>
+            <tr></tr>
+            </table>
+            </div>
+        `
+    })
+
+    /**/
+    userList.innerHTML = User;
+}

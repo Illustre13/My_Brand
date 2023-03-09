@@ -69,13 +69,13 @@
       <div class="label_section">
         <label for="title">Blog Title: </label>
       </div>
-      <input type="text" name="title" required placeholder="Blog title">
+      <input type="text" name="title" required="required" placeholder="Blog title">
     </div>
     <div class="aa_section001">
       <div class="label_section">
         <label for="category">Blog Category: </label>
       </div>
-      <select name="category">
+      <select name="category" required="required">
         <option value="Programming">Programming</option>
         <option value="Life Style">Life Style</option>
         <option value="Sport">Sport</option>
@@ -95,6 +95,7 @@
         rows="20"
         cols="100"
         placeholder="Enter Blog Content Here"
+        required="required"
       ></textarea>
     </div>
 
@@ -118,7 +119,7 @@
     
 </div>
 
-    <button type="submit">Publish<i class="fa-solid fa-circle-plus"></i></button>
+    <button type="submit">Publish <i class="fa-solid fa-circle-plus"></i></button>
   
   </form action="" method="post" id="create_blog_form">
 
