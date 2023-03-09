@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/script/general.js"></script>
     <title>Dashboard</title>
   </head>
   <body>
@@ -79,688 +78,667 @@
         <div class="section-header_title">
           <h2>Welcome To Admin Portal</h2>
         </div>
-        <!--Dashboard Button Switch-->
-        <div class="button_switch">
-          <button class="tab-button" onclick="openTab(event, 'tab1')">Manage Blogs</button>
-          <button class="tab-button" onclick="openTab(event, 'tab2')">Manage Querries</button>
-          <button class="tab-button" onclick="openTab(event, 'tab3')">Manage Users</button>
-        </div>
-        <div id="tab1" class="tab"> 
-          <div class="admin_side">
-            <div class="admin_side_001">
-              <div class="admin_side_004">
-                <form class="search">
-                  <div class="admin_search">
-                    <input
-                      type="search"
-                      name="admin_search"
-                      placeholder="Search Blog"
-                    />
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                  </div>
-                </form>
-                
-                <div class="add_article">
-                  <a href="json_create_blog.html">
-                    <div><p>Add New Blog</p></div>
-                    <div><i class="fa-solid fa-square-plus"></i></div>
-                  </a>
+
+        <div class="admin_side">
+          <div class="admin_side_001">
+            <div class="admin_side_004">
+              <form class="search">
+                <div class="admin_search">
+                  <input
+                    type="search"
+                    name="admin_search"
+                    placeholder="Search Blog"
+                  />
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                
+              </form>
+              
+              <div class="add_article">
+                <a href="json_create_blog.html">
+                  <div><p>Add New Blog</p></div>
+                  <div><i class="fa-solid fa-square-plus"></i></div>
+                </a>
               </div>
-  
-           
-              <h2>All Blogs</h2>
-              <div class="all_blogs">
-                <!-- inject blogs here from js -->
-              </div>
-              <!--
-                <div class="Recent_Table">
-                <h2>Recent Article</h2>
-                <table>
-                  <tr>
-                    <th rowspan="2">N0</th>
-                    <th rowspan="2">Article Title</th>
-                    <th>Post Date</th>
-                  </tr>
-                  <tr>
-                    <th>Engagement</th>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">1</td>
-                    <td rowspan="2">13 path to a successfull life...</td>
-                    <td>25 November, 2022</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">2</td>
-                    <td rowspan="2">13 path to a successfull life...</td>
-                    <td>25 November, 2022</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">3</td>
-                    <td rowspan="2">13 path to a successfull life...</td>
-                    <td>25 November, 2022</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">4</td>
-                    <td rowspan="2">13 path to a successfull life...</td>
-                    <td>25 November, 2022</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">5</td>
-                    <td rowspan="2">13 path to a successfull life...</td>
-                    <td>25 November, 2022</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">6</td>
-                    <td rowspan="2">13 path to a successfull life...</td>
-                    <td>25 November, 2022</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">7</td>
-                    <td rowspan="2">13 path to a successfull life...</td>
-                    <td>25 November, 2022</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes"></i>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div class="All_Table">
-                <h2>All Articles</h2>
-                <p>Simply Edit articles at one stand</p>
-                <table>
-                  <tr>
-                    <th rowspan="2">N0</th>
-                    <th rowspan="2">Article Title</th>
-                    <th>Post Date</th>
-                    <th>Edit</th>
-                  </tr>
-                  <tr>
-                    <th>Engagement</th>
-                    <th>Delete</th>
-                  </tr>
-                  <!-- table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                  <tr>
-                    <th rowspan="2">1</th>
-                    <th rowspan="2">13 path to a successfull life...</th>
-                    <th>25 November 2022</th>
-                    <th>
-                      <a href="edit_article.html"
-                        ><i class="fa-solid fa-pen-to-square ed"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th>
-                      <div class="share_icons">
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-square-share-nodes ed"></i>
-                      </div>
-                    </th>
-                    <th>
-                      <a href="delete_article.html"
-                        ><i class="fa-solid fa-trash-can"></i
-                      ></a>
-                    </th>
-                  </tr>
-                  <!--table row end
-                </table>
-              </div>
-              -->
               
             </div>
-            <div class="side_bar">
-              <!--
-              <div class="side_popular">
-                <h2>Popular Posts</h2>
-                <div class="pp_line"></div>
-                <div class="popular">
-                  <img src="/images/a.jpg" alt="Posts" />
-                  <div class="popular_001">
-                    <h4>13 path to a succesfull lifestyle</h4>
-                    <div class="pp_misc">
-                      <div class="pp_share_tags">
-                        <div class="pp_hashtags">
-                          <p>#Travel</p>
-                          <p>#Lifestyle</p>
-                        </div>
-                        <div class="share_icons">
-                          <p>20</p>
-                          <i class="fa-regular fa-heart"></i>
-                          <p>20</p>
-                          <i class="fa-regular fa-comment"></i>
-                          <i class="fa-solid fa-square-share-nodes"></i>
-                        </div>
-                      </div>
-                      <div class="read_date">
-                        <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        <p>
-                          <i class="fa-solid fa-calendar"></i> 25 November 2022
-                        </p>
-                      </div>
+
+         
+            <h2>All Blogs</h2>
+            <div class="all_blogs">
+              <!-- inject blogs here from js -->
+            </div>
+            <!--
+              <div class="Recent_Table">
+              <h2>Recent Article</h2>
+              <table>
+                <tr>
+                  <th rowspan="2">N0</th>
+                  <th rowspan="2">Article Title</th>
+                  <th>Post Date</th>
+                </tr>
+                <tr>
+                  <th>Engagement</th>
+                </tr>
+                <tr>
+                  <td rowspan="2">1</td>
+                  <td rowspan="2">13 path to a successfull life...</td>
+                  <td>25 November, 2022</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
                     </div>
-                  </div>
-                </div>
-                <div class="popular">
-                  <img src="/images/a.jpg" alt="Posts" />
-                  <div class="popular_001">
-                    <h4>13 path to a succesfull lifestyle</h4>
-                    <div class="pp_misc">
-                      <div class="pp_share_tags">
-                        <div class="pp_hashtags">
-                          <p>#Travel</p>
-                          <p>#Lifestyle</p>
-                        </div>
-                        <div class="share_icons">
-                          <p>20</p>
-                          <i class="fa-regular fa-heart"></i>
-                          <p>20</p>
-                          <i class="fa-regular fa-comment"></i>
-                          <i class="fa-solid fa-square-share-nodes"></i>
-                        </div>
-                      </div>
-                      <div class="read_date">
-                        <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        <p>
-                          <i class="fa-solid fa-calendar"></i> 25 November 2022
-                        </p>
-                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">2</td>
+                  <td rowspan="2">13 path to a successfull life...</td>
+                  <td>25 November, 2022</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
                     </div>
-                  </div>
-                </div>
-                <div class="popular">
-                  <img src="/images/a.jpg" alt="Posts" />
-                  <div class="popular_001">
-                    <h4>13 path to a succesfull lifestyle</h4>
-                    <div class="pp_misc">
-                      <div class="pp_share_tags">
-                        <div class="pp_hashtags">
-                          <p>#Travel</p>
-                          <p>#Lifestyle</p>
-                        </div>
-                        <div class="share_icons">
-                          <p>20</p>
-                          <i class="fa-regular fa-heart"></i>
-                          <p>20</p>
-                          <i class="fa-regular fa-comment"></i>
-                          <i class="fa-solid fa-square-share-nodes"></i>
-                        </div>
-                      </div>
-                      <div class="read_date">
-                        <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        <p>
-                          <i class="fa-solid fa-calendar"></i> 25 November 2022
-                        </p>
-                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">3</td>
+                  <td rowspan="2">13 path to a successfull life...</td>
+                  <td>25 November, 2022</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
                     </div>
-                  </div>
-                </div>
-                <div class="popular">
-                  <img src="/images/a.jpg" alt="Posts" />
-                  <div class="popular_001">
-                    <h4>13 path to a succesfull lifestyle</h4>
-                    <div class="pp_misc">
-                      <div class="pp_share_tags">
-                        <div class="pp_hashtags">
-                          <p>#Travel</p>
-                          <p>#Lifestyle</p>
-                        </div>
-                        <div class="share_icons">
-                          <p>20</p>
-                          <i class="fa-regular fa-heart"></i>
-                          <p>20</p>
-                          <i class="fa-regular fa-comment"></i>
-                          <i class="fa-solid fa-square-share-nodes"></i>
-                        </div>
-                      </div>
-                      <div class="read_date">
-                        <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        <p>
-                          <i class="fa-solid fa-calendar"></i> 25 November 2022
-                        </p>
-                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">4</td>
+                  <td rowspan="2">13 path to a successfull life...</td>
+                  <td>25 November, 2022</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
                     </div>
-                  </div>
-                </div>
-                <div class="popular">
-                  <img src="/images/a.jpg" alt="Posts" />
-                  <div class="popular_001">
-                    <h4>13 path to a succesfull lifestyle</h4>
-                    <div class="pp_misc">
-                      <div class="pp_share_tags">
-                        <div class="pp_hashtags">
-                          <p>#Travel</p>
-                          <p>#Lifestyle</p>
-                        </div>
-                        <div class="share_icons">
-                          <p>20</p>
-                          <i class="fa-regular fa-heart"></i>
-                          <p>20</p>
-                          <i class="fa-regular fa-comment"></i>
-                          <i class="fa-solid fa-square-share-nodes"></i>
-                        </div>
-                      </div>
-                      <div class="read_date">
-                        <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        <p>
-                          <i class="fa-solid fa-calendar"></i> 25 November 2022
-                        </p>
-                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">5</td>
+                  <td rowspan="2">13 path to a successfull life...</td>
+                  <td>25 November, 2022</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
                     </div>
-                  </div>
-                </div>
-                <div class="popular">
-                  <img src="/images/a.jpg" alt="Posts" />
-                  <div class="popular_001">
-                    <h4>13 path to a succesfull lifestyle</h4>
-                    <div class="pp_misc">
-                      <div class="pp_share_tags">
-                        <div class="pp_hashtags">
-                          <p>#Travel</p>
-                          <p>#Lifestyle</p>
-                        </div>
-                        <div class="share_icons">
-                          <p>20</p>
-                          <i class="fa-regular fa-heart"></i>
-                          <p>20</p>
-                          <i class="fa-regular fa-comment"></i>
-                          <i class="fa-solid fa-square-share-nodes"></i>
-                        </div>
-                      </div>
-                      <div class="read_date">
-                        <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        <p>
-                          <i class="fa-solid fa-calendar"></i> 25 November 2022
-                        </p>
-                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">6</td>
+                  <td rowspan="2">13 path to a successfull life...</td>
+                  <td>25 November, 2022</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
                     </div>
-                  </div>
-                </div>
-                <div class="popular">
-                  <img src="/images/a.jpg" alt="Posts" />
-                  <div class="popular_001">
-                    <h4>13 path to a succesfull lifestyle</h4>
-                    <div class="pp_misc">
-                      <div class="pp_share_tags">
-                        <div class="pp_hashtags">
-                          <p>#Travel</p>
-                          <p>#Lifestyle</p>
-                        </div>
-                        <div class="share_icons">
-                          <p>20</p>
-                          <i class="fa-regular fa-heart"></i>
-                          <p>20</p>
-                          <i class="fa-regular fa-comment"></i>
-                          <i class="fa-solid fa-square-share-nodes"></i>
-                        </div>
-                      </div>
-                      <div class="read_date">
-                        <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
-                        <p>
-                          <i class="fa-solid fa-calendar"></i> 25 November 2022
-                        </p>
-                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">7</td>
+                  <td rowspan="2">13 path to a successfull life...</td>
+                  <td>25 November, 2022</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes"></i>
                     </div>
-                  </div>
-                </div>
-              </div>
-              -->
-              
-              <div class="side_popular">
-                <h2>Popular Posts</h2>
-                <div class="pp_line"></div>
-                <div class="side_popular_json">
-                  <!--Inject Popular Post from the json-index.js-->
-                </div>
-              </div>
-                <div class="side_comments">
-                  <h2>Recent Comments</h2>
-                  <div class="pp_line"></div>
-                  <div class="comment_001">
-                    <q
-                      >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                      laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                      ex iusto rem vitae provident eveniet!</q
-                    >
-                    <div class="comment_002">
-                      <img src="/images/a.jpg" alt="Comment Image" />
-                      <div class="comment_003">
-                        <h3>Bertin NDAHAYO</h3>
-                        <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                      </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="All_Table">
+              <h2>All Articles</h2>
+              <p>Simply Edit articles at one stand</p>
+              <table>
+                <tr>
+                  <th rowspan="2">N0</th>
+                  <th rowspan="2">Article Title</th>
+                  <th>Post Date</th>
+                  <th>Edit</th>
+                </tr>
+                <tr>
+                  <th>Engagement</th>
+                  <th>Delete</th>
+                </tr>
+                <!-- table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
                     </div>
-                  </div>
-                  <div class="comment_001">
-                    <q
-                      >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                      laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                      ex iusto rem vitae provident eveniet!</q
-                    >
-                    <div class="comment_002">
-                      <img src="/images/a.jpg" alt="Comment Image" />
-                      <div class="comment_003">
-                        <h3>Bertin NDAHAYO</h3>
-                        <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                      </div>
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
                     </div>
-                  </div>
-                  <div class="comment_001">
-                    <q
-                      >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                      laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                      ex iusto rem vitae provident eveniet!</q
-                    >
-                    <div class="comment_002">
-                      <img src="/images/a.jpg" alt="Comment Image" />
-                      <div class="comment_003">
-                        <h3>Bertin NDAHAYO</h3>
-                        <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                      </div>
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
                     </div>
-                  </div>
-                  <div class="comment_001">
-                    <q
-                      >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Doloremque vero cumque aliquam ad eos eaque enim blanditiis
-                      laboriosam facilis obcaecati delectus incidunt, quibusdam odio
-                      ex iusto rem vitae provident eveniet!</q
-                    >
-                    <div class="comment_002">
-                      <img src="/images/a.jpg" alt="Comment Image" />
-                      <div class="comment_003">
-                        <h3>Bertin NDAHAYO</h3>
-                        <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
-                      </div>
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
                     </div>
-                  </div>
-                </div>
-              </div>
-          </div> 
-        </div>
-    
-        <div id="tab2" class="tab">
-          <h2>User Querries</h2>
-        </div>
-    
-        <div id="tab3" class="tab">
-          <h2>Users List</h2>
-          <div class="user_list">
-            <!--Getting users list from the json server-->
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
+                    </div>
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
+                    </div>
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
+                    </div>
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+                <tr>
+                  <th rowspan="2">1</th>
+                  <th rowspan="2">13 path to a successfull life...</th>
+                  <th>25 November 2022</th>
+                  <th>
+                    <a href="edit_article.html"
+                      ><i class="fa-solid fa-pen-to-square ed"></i
+                    ></a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="share_icons">
+                      <p>20</p>
+                      <i class="fa-regular fa-heart"></i>
+                      <p>20</p>
+                      <i class="fa-regular fa-comment"></i>
+                      <i class="fa-solid fa-square-share-nodes ed"></i>
+                    </div>
+                  </th>
+                  <th>
+                    <a href="delete_article.html"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                  </th>
+                </tr>
+                <!--table row end
+              </table>
+            </div>
+            -->
             
           </div>
-        </div>
-        <!---->
-         
+          <div class="side_bar">
+            <!--
+            <div class="side_popular">
+              <h2>Popular Posts</h2>
+              <div class="pp_line"></div>
+              <div class="popular">
+                <img src="/images/a.jpg" alt="Posts" />
+                <div class="popular_001">
+                  <h4>13 path to a succesfull lifestyle</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>#Travel</p>
+                        <p>#Lifestyle</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <img src="/images/a.jpg" alt="Posts" />
+                <div class="popular_001">
+                  <h4>13 path to a succesfull lifestyle</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>#Travel</p>
+                        <p>#Lifestyle</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <img src="/images/a.jpg" alt="Posts" />
+                <div class="popular_001">
+                  <h4>13 path to a succesfull lifestyle</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>#Travel</p>
+                        <p>#Lifestyle</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <img src="/images/a.jpg" alt="Posts" />
+                <div class="popular_001">
+                  <h4>13 path to a succesfull lifestyle</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>#Travel</p>
+                        <p>#Lifestyle</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <img src="/images/a.jpg" alt="Posts" />
+                <div class="popular_001">
+                  <h4>13 path to a succesfull lifestyle</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>#Travel</p>
+                        <p>#Lifestyle</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <img src="/images/a.jpg" alt="Posts" />
+                <div class="popular_001">
+                  <h4>13 path to a succesfull lifestyle</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>#Travel</p>
+                        <p>#Lifestyle</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <img src="/images/a.jpg" alt="Posts" />
+                <div class="popular_001">
+                  <h4>13 path to a succesfull lifestyle</h4>
+                  <div class="pp_misc">
+                    <div class="pp_share_tags">
+                      <div class="pp_hashtags">
+                        <p>#Travel</p>
+                        <p>#Lifestyle</p>
+                      </div>
+                      <div class="share_icons">
+                        <p>20</p>
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20</p>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                      </div>
+                    </div>
+                    <div class="read_date">
+                      <p><i class="fa-solid fa-clock"></i> 3 min reads</p>
+                      <p>
+                        <i class="fa-solid fa-calendar"></i> 25 November 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            -->
+            
+            <div class="side_popular">
+              <h2>Popular Posts</h2>
+              <div class="pp_line"></div>
+              <div class="side_popular_json">
+                <!--Inject Popular Post from the json-index.js-->
+              </div>
+            </div>
+              <div class="side_comments">
+                <h2>Recent Comments</h2>
+                <div class="pp_line"></div>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment_001">
+                  <q
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque vero cumque aliquam ad eos eaque enim blanditiis
+                    laboriosam facilis obcaecati delectus incidunt, quibusdam odio
+                    ex iusto rem vitae provident eveniet!</q
+                  >
+                  <div class="comment_002">
+                    <img src="/images/a.jpg" alt="Comment Image" />
+                    <div class="comment_003">
+                      <h3>Bertin NDAHAYO</h3>
+                      <p><i class="fa-solid fa-calendar"></i> 25 November 2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>  
      
         
       </div>
@@ -772,7 +750,6 @@
         ></i>
       </div>
     </div>
-    
     <script src="script/json-all-in-table.js"></script>
     <script src="script/json-index.js"></script>
   </body>
