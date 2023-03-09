@@ -90,22 +90,99 @@
     /*clip-path: polygon(100% 100%, 100% 100%, 100% 100%);*/
   }
 
- /* @supports (clip-path: inset(50%)) {
-    .triangle {
-      display: block;
-      height: 500px;
-      width: 500px;
-      background-color: rgba(26, 36, 46, 0.5);
-      border: inherit;
-      position: static;
-     margin: auto;
-      left: calc(50% - 10px);
-      clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-      transform: rotate(-45deg);
-      border-radius: 100px;
-      
-    }
-  }*/
   .triangle > h3{
  font-size: 30px;
+  }
+
+ 
+   /*Mobile Responsiveness*/
+  @media only screen and (max-width: 390px) {
+
+    .por_holder{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        
+    }
+    .por_holder h2{
+        font-size: 15px;
+    }
+    .project_hs{
+        width: 22rem;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .hs_001{
+        width: 400px;
+        height: 20rem;
+        background-image: url(/images/cCC.jpeg);
+        margin: 0 5px;
+    
+    }
+    .hs_004{
+        margin: 2px;
+        border-radius: 20px;
+        height:150px;
+        width: 250px;
+    }
+    .hs_004 h3{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .hs_002{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: flex-start;
+      
+    }
+    .hs_003{
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        padding: 0px 20px;
+    
+    
+    }
+    .hs_003>p{
+        font-size: 15px;
+    }
+    .hs_003 > i{
+        margin: auto;
+        
+    }
+    .controller{
+        width: 30px;
+        height: auto;
+        padding: 0px;
+        background-color:#1A242E;
+        margin-bottom: 10px;
+        
+    }
+    .controller >i{
+        margin: 5px;
+        font-size: 15px;
+    }
+    .controller>i:hover{
+        color: #03a9f4;
+        
+    }
+      .triangle{margin: auto;
+        width: 22rem;
+        height: 400px;
+        text-align: center;
+        align-items: center;
+        /*clip-path: polygon(100% 100%, 100% 100%, 100% 100%);*/
+      }
+    
+      .triangle > h3{
+     font-size: 25px;
+      }
   }

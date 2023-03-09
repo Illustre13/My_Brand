@@ -54,17 +54,14 @@
   }
 }
 @media only screen and (max-width: 390px) {
-  .logo_animation{
-    background: #000;
-    align-items: center;
-    justify-content: center;
-    margin-left: 70px;
-    margin-top: -5px;
-  }
-  .logo_animation h2 {
-    color: #fff;
-    font-size: 2em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
+
+.logo_animation{
+  margin-left: 80px;
+  margin-top: -2px;
+  z-index: 1;
+}
+.logo_animation h2{
+  font-size: 2.3em;
+}
+
 }
