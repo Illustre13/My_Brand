@@ -5,7 +5,7 @@ const container = document.querySelector('.details');
 const deleteBtn = document.querySelector('.delete');
 
 const renderDetails = async () => {
-    const res = await fetch(`http://localhost:3000/posts/${id}`);
+    const res = await fetch(`http://localhost:4455/blog/${id}`);
     const post = await res.json();
 
     const template = `
@@ -18,10 +18,10 @@ const renderDetails = async () => {
             <p>${post.category}</p>
         </div>
         <div class="ap_img_section">
-            <img src="${post.base64}" alt="article_image">
+            <img src="${post.image}" alt="article_image">
         </div>
         <div class="content_section">
-            <p class="ap_content">${post.body}</p>
+            <p class="ap_content">${post.content}</p>
         </div>
         <div class="add_comment_share_icons">
         <button>Add Comment <i class="fa-solid fa-comment"></i></button>
@@ -49,7 +49,7 @@ const renderDetails = async () => {
 }
 deleteBtn.addEventListener('click', async (e) => {
     e.preventDefault();
-    await fetch(`http://localhost:3000/posts/${id}`, {
+    await fetch(`http://localhost:4455/delete_blog/${id}`, {
         method: 'DELETE'
     });
     window.location.replace('/dashboard.html');

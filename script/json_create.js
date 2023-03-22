@@ -16,12 +16,12 @@ if(article_id !== null ){
 
 }
 async function call_article() {
-  let res = await fetch(`http://localhost:3000/posts/${article_id}`)
+  let res = await fetch(`http://localhost:4455/blog/${article_id}`)
   article = await res.json()
 form.title.value = article.title;
 form.category.value = article.category;
-form.body.value = article.body;
-form.imagenFondo.src = article.base64;
+form.body.value = article.content;
+form.imagenFondo.src = article.image;
 form.file.value = "Already Uploaded"
 
 
@@ -54,11 +54,10 @@ function preview_2(obj)
                 const doc = {
                     title: form.title.value,
                     category: form.category.value,
-                    body: form.body.value,
-                    likes: 10, 
-                    base64: srcData
+                    content: form.body.value,
+                    image: srcData
                 }
-                await fetch(`http://localhost:3000/posts/${article_id}`, {
+                await fetch(`http://localhost:4455/update_blog/${article_id}`, {
                     method: 'PUT',
                     body: JSON.stringify(doc),
                     headers: { 'Content-Type': 'application/json' }
@@ -73,11 +72,10 @@ function preview_2(obj)
                 const doc = {
                     title: form.title.value,
                     category: form.category.value,
-                    body: form.body.value,
-                    likes: 10, 
-                    base64: srcData
+                    content: form.body.value,
+                    image: srcData
                 }
-                await fetch('http://localhost:3000/posts', {
+                await fetch('http://localhost:4455/create_blog', {
                     method: 'POST',
                     body: JSON.stringify(doc),
                     headers: { 'Content-Type': 'application/json' }

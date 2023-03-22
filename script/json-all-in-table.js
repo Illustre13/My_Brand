@@ -15,12 +15,12 @@ const renderPosts = async (term) => {
         template += `
             <div class="blog_holder">
                 <div class="img_sctn">
-                <img src="${post.base64}" alt="article_image">
+                <img src="${post.image}" alt="article_image">
                 </div>
                 <div class="ah_001">
                     <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
                 
-                    <p>${post.body.slice(0, 50)}<a href="/json_details.html?id=${ post.id }">...Read more</a></p>
+                    <p>${post.content.slice(0, 50)}<a href="/json_details.html?id=${ post.id }">...Read more</a></p>
                     <div class="ah_misc">
                         <div class="category">
                             <p>${post.category}</p>                        
