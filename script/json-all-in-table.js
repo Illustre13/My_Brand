@@ -4,7 +4,7 @@ const container = document.querySelector('.all_blogs');
 const searchForm = document.querySelector('.search');
 const side_popular_post = document.querySelector('.side_popular_json');
 const renderPosts = async (term) => {
-    let uri = 'https://ith-mybrand-backend.onrender.com/blog?_order=desc';
+    let uri = 'http://localhost:4455/blog?_order=desc';
     if (term) {
         uri += `&q=${term}`;
     }
@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', () => renderPosts());
 
 async function deleteBtn(id) {
     
-        await fetch(`https://ith-mybrand-backend.onrender.com/delete_blog/${id}`, {
+        await fetch(`http://localhost:4455/delete_blog/${id}`, {
             method: 'DELETE'
         });
     
