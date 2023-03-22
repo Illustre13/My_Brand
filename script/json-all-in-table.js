@@ -4,7 +4,7 @@ const container = document.querySelector('.all_blogs');
 const searchForm = document.querySelector('.search');
 const side_popular_post = document.querySelector('.side_popular_json');
 const renderPosts = async (term) => {
-    let uri = 'https://ith-mybrand-backend.onrender.com/blogs?_order=desc';
+    let uri = 'https://ith-mybrand-backend.onrender.com/blog?_order=desc';
     if (term) {
         uri += `&q=${term}`;
     }
