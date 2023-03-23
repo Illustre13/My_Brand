@@ -21,8 +21,7 @@ async function call_article() {
 form.title.value = article.title;
 form.category.value = article.category;
 form.body.value = article.content;
-form.imagenFondo.src = article.image;
-form.file.value = "Already Uploaded"
+form.imagenFondo.src = article.image
 
 
 
