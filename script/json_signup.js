@@ -4,7 +4,7 @@ let emailExists = async (email)=>{
     uri += `${email}`
     const res = await fetch(uri)
     const user = await res.json();
-
+ 
     if(user.length === 0){
         return false
     }
@@ -15,13 +15,13 @@ let error_message = document.getElementById('error_message');
 const form = document.getElementById('signUpForm');
 const createUser = async (e) => {
     e.preventDefault();
-    let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-    if(form.email.value.match(validRegex)){
-        let emExists = await emailExists(form.email.value)
-        console.log( 'Hey', emExists)
-        if (emExists){
-            error_message.innerText = 'Email already exists, Go to log in'
-        }else{
+    // let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    // if(form.email.value.match(validRegex)){
+    //     let emExists = await emailExists(form.email.value)
+    //     console.log( 'Hey, Email already exist!!', emExists)
+    //     if (emExists){
+    //         error_message.innerText = 'Email already exists, Go to log in'
+    //     }else{
             
             if(form.email.value == "ndahayosibertin17@gmail.com"){
                 const doc = {
@@ -56,9 +56,9 @@ const createUser = async (e) => {
                 localStorage.setItem('user',JSON.stringify(user_details))
                 window.location.replace('/login_page.html');
             }
-        }
-    }else{
-        error_message.innerText = 'Invalid Email'
-    }
+       // }
+    //}else{
+      //  error_message.innerText = 'Invalid Email'
+   // }
 }
 form.addEventListener('submit', createUser);
