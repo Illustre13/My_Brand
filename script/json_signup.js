@@ -1,6 +1,6 @@
 
 let emailExists = async (email)=>{
-    let uri = 'http://localhost:3000/users?email='
+    let uri = 'https://ith-mybrand-backend.onrender.com/user?email='
     uri += `${email}`
     const res = await fetch(uri)
     const user = await res.json();
@@ -25,32 +25,34 @@ const createUser = async (e) => {
             
             if(form.email.value == "ndahayosibertin17@gmail.com"){
                 const doc = {
-                    name: form.uname.value,
+                    username: form.uname.value,
                     email: form.email.value,
-                    password: form.confirm_password.value,
-                    role:"admin",
+                    password: form.password.value,
+                    rePassword: form.confirm_password.value,
+                    role:"Admin",
                 }
-                await fetch('http://localhost:3000/users', {
+                await fetch('https://ith-mybrand-backend.onrender.com/signup', {
                     method: 'POST',
                     body: JSON.stringify(doc),
                     headers: { 'Content-Type': 'application/json' }
                 });
-                user_details = {name: form.uname.value,email: form.email.value,password: form.password_001.value, role: 'user'}
+                user_details = {username: form.uname.value,email: form.email.value,password: form.password.value, rePassword: form.confirm_password.value, role: 'User'}
                 localStorage.setItem('user',JSON.stringify(user_details))
                 window.location.replace('/login_page.html');
             }else{
                 const doc = {
-                    name: form.uname.value,
+                    username: form.uname.value,
                     email: form.email.value,
-                    password: form.confirm_password.value,
-                    role:"user",
+                    password: form.password.value,
+                    rePassword: form.confirm_password.value,
+                    role:"User",
                 }
-                await fetch('http://localhost:3000/users', {
+                await fetch('https://ith-mybrand-backend.onrender.com/signup', {
                     method: 'POST',
                     body: JSON.stringify(doc),
                     headers: { 'Content-Type': 'application/json' }
                 });
-                user_details = {name: form.uname.value,email: form.email.value,password: form.password_001.value, role: 'user'}
+                user_details = {username: form.uname.value,email: form.email.value,password: form.password_001.value,rePassword: form.confirm_password.value, role: 'User'}
                 localStorage.setItem('user',JSON.stringify(user_details))
                 window.location.replace('/login_page.html');
             }

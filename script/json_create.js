@@ -16,7 +16,7 @@ if(article_id !== null ){
 
 }
 async function call_article() {
-  let res = await fetch(`http://localhost:4455/blog/${article_id}`)
+  let res = await fetch(`https://ith-mybrand-backend.onrender.com/blog/${article_id}`)
   article = await res.json()
 form.title.value = article.title;
 form.category.value = article.category;
@@ -57,7 +57,7 @@ function preview_2(obj)
                     content: form.body.value,
                     image: srcData
                 }
-                await fetch(`http://localhost:4455/update_blog/${article_id}`, {
+                await fetch(`https://ith-mybrand-backend.onrender.com/update_blog/${article_id}`, {
                     method: 'PUT',
                     body: JSON.stringify(doc),
                     headers: { 'Content-Type': 'application/json' }
@@ -75,7 +75,7 @@ function preview_2(obj)
                     content: form.body.value,
                     image: srcData
                 }
-                await fetch('http://localhost:4455/create_blog', {
+                await fetch('https://ith-mybrand-backend.onrender.com/create_blog', {
                     method: 'POST',
                     body: JSON.stringify(doc),
                     headers: { 'Content-Type': 'application/json' }

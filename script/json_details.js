@@ -5,7 +5,7 @@ const container = document.querySelector('.details');
 const deleteBtn = document.querySelector('.delete');
 
 const renderDetails = async () => {
-    const res = await fetch(`http://localhost:4455/blog/${id}`);
+    const res = await fetch(`https://ith-mybrand-backend.onrender.com/blog/${id}`);
     const post = await res.json();
 
     const template = `
@@ -49,7 +49,7 @@ const renderDetails = async () => {
 }
 deleteBtn.addEventListener('click', async (e) => {
     e.preventDefault();
-    await fetch(`http://localhost:4455/delete_blog/${id}`, {
+    await fetch(`https://ith-mybrand-backend.onrender.com/delete_blog/${id}`, {
         method: 'DELETE'
     });
     window.location.replace('/dashboard.html');

@@ -6,7 +6,7 @@ const side_popular_post = document.querySelector('.side_popular_json');
 const blog_my_brand_var = document.querySelector('.bs_recent_blog');
 
 const renderPosts = async (term) => {
-    let uri = 'http://localhost:4455/blog?_order=desc';
+    let uri = 'https://ith-mybrand-backend.onrender.com/blog?_order=desc';
     if (term) {
         uri += `&q=${term}`;
     }
@@ -16,12 +16,12 @@ const renderPosts = async (term) => {
     posts.forEach(post => {
         template += `
             <div class="article_holder">
-                <img src="${post.base64}" alt="article image"/>
+                <img src="${post.image}" alt="article image"/>
                 
                 <div class="ah_001">
                     <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
                    
-                    <p>${post.body.slice(0, 200)}</p>
+                    <p>${post.content.slice(0, 200)}</p>
                     <div class="ah_misc">
                         <div class="hashtags">
                             <p>${post.category}</p>
@@ -48,7 +48,7 @@ const renderPosts = async (term) => {
         editor += `
         <div class="ed_leaf">
             <div class="ed_img">
-            <img src="${post.base64}" alt="Editor's pick image"/>
+            <img src="${post.image}" alt="Editor's pick image"/>
             </div>
             <div class="ah_misc">
                 <div class="hashtags">
@@ -116,12 +116,12 @@ const renderPosts = async (term) => {
     posts.forEach(post => {
         blog_my_brand += `
             <div class="article_holder">
-                <img src="${post.base64}" alt="article image"/>
+                <img src="${post.image}" alt="article image"/>
                 
                 <div class="ah_001">
                     <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
                    
-                    <p>${post.body.slice(0, 200)}</p>
+                    <p>${post.content.slice(0, 200)}</p>
                     <div class="ah_misc">
                         <div class="hashtags">
                             <p>${post.category}</p>

@@ -6,15 +6,15 @@ const loginUser = async (e) => {
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     
     if(form.email.value.match(validRegex)){
-        let uri = 'http://localhost:3000/users?email='
+        let uri = 'https://ith-mybrand-backend.onrender.com/user?email='
         uri += `${form.email.value}`
         const res = await fetch(uri)
         const user = await res.json();
         if(user[0]){
             if(user[0].password === form.password.value){
-                user_details = {name: user[0].name,email: user[0].email, role: user[0].role}
+                user_details = {username: user[0].username,email: user[0].email, role: user[0].role}
                 localStorage.setItem('user',JSON.stringify(user_details))
-                if(user[0].role === 'admin'){
+                if(user[0].role === 'Admin'){
                     window.location.replace('/dashboard.html');
                     e_msg.innerText = 'Admin Account'
 

@@ -1,6 +1,6 @@
 
 let emailExists = async (email)=>{
-    let uri = 'http://localhost:3000/users?email='
+    let uri = 'https://ith-mybrand-backend.onrender.com/user?email='
     uri += `${email}`
     const res = await fetch(uri)
     const user = await res.json();
@@ -34,12 +34,13 @@ const form = document.getElementById('signUpForm');
                     const createUser = async (e) => {
                     e.preventDefault();
                     const doc = {
-                        name: form.uname.value,
+                        username: form.uname.value,
                         email: form.email.value,
                         password: form.password.value,
-                        role:"admin",
+                        rePassword: form.confirm_password.value,
+                        role:"Admin",
                     }
-                    await fetch('http://localhost:3000/users', {
+                    await fetch('https://ith-mybrand-backend.onrender.com/signup', {
                         method: 'POST',
                         body: JSON.stringify(doc),
                         headers: { 'Content-Type': 'application/json' }
@@ -51,12 +52,13 @@ const form = document.getElementById('signUpForm');
                     const createUser = async (e) => {
                         e.preventDefault();
                     const doc = {
-                        name: form.uname.value,
+                        username: form.uname.value,
                         email: form.email.value,
                         password: form.password.value,
-                        role:"user",
+                        rePassword: form.confirm_password.value,
+                        role:"User",
                     }
-                    await fetch(`http://localhost:3000/users`, {
+                    await fetch(`https://ith-mybrand-backend.onrender.com/signup`, {
                         method: 'POST',
                         body: JSON.stringify(doc),
                         headers: { 'Content-Type': 'application/json' }
