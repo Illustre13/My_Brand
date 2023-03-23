@@ -18,9 +18,9 @@ const renderPosts = async (term) => {
                 <img src="${post.image}" alt="article_image">
                 </div>
                 <div class="ah_001">
-                    <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
+                    <h3><a href="/json_details.html?id=${ post._id }">${post.title}</a></h3>
                 
-                    <p>${post.content.slice(0, 50)}<a href="/json_details.html?id=${ post.id }">...Read more</a></p>
+                    <p>${post.content.slice(0, 50)}<a href="/json_details.html?id=${ post._id }">...Read more</a></p>
                     <div class="ah_misc">
                         <div class="category">
                             <p>${post.category}</p>                        
@@ -31,8 +31,8 @@ const renderPosts = async (term) => {
                         </div>
                     </div>
                     <div class="controller">
-                        <button class="delete" onclick="deleteBtn(${post.id})">Delete </button>
-                        <button class="edit" onclick="window.location = '/json_create_blog.html?id=${post.id}'">Edit</button>
+                        <button class="delete" onclick="deleteBtn(${post._id})">Delete </button>
+                        <button class="edit" onclick="window.location = '/json_create_blog.html?id=${post._id}'">Edit</button>
                     </div>
                     
                 </div>

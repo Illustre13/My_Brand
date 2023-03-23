@@ -19,7 +19,7 @@ const renderPosts = async (term) => {
                 <img src="${post.image}" alt="article image"/>
                 
                 <div class="ah_001">
-                    <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
+                    <h3><a href="/json_details.html?id=${ post._id }">${post.title}</a></h3>
                    
                     <p>${post.content.slice(0, 200)}</p>
                     <div class="ah_misc">
@@ -32,7 +32,7 @@ const renderPosts = async (term) => {
                         </div>
                         <div class="read-more">
                             
-                            <a href="/json_details.html?id=${ post.id }">Read more...</a>
+                            <a href="/json_details.html?id=${ post._id }">Read more...</a>
                         </div>
                     </div>
                     
@@ -59,7 +59,7 @@ const renderPosts = async (term) => {
                 </div>
             </div>
             <div class="ed_header">
-                <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
+                <h3><a href="/json_details.html?id=${ post._id }">${post.title}</a></h3>
             </div>
             <div class="ed_profile">
                 <div class="ed_profile_img">
@@ -71,7 +71,7 @@ const renderPosts = async (term) => {
                 </div>
                 <div class="ed_read-more">
                     <div class="circle"></div>
-                    <a href="/json_details.html?id=${ post.id }">Read more...</a>
+                    <a href="/json_details.html?id=${ post._id }">Read more...</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@ const renderPosts = async (term) => {
                 <img src="${post.image}" alt="article image"/>
                 
                 <div class="ah_001">
-                    <h3><a href="/json_details.html?id=${ post.id }">${post.title}</a></h3>
+                    <h3><a href="/json_details.html?id=${ post._id }">${post.title}</a></h3>
                    
                     <p>${post.content.slice(0, 200)}</p>
                     <div class="ah_misc">
@@ -132,7 +132,7 @@ const renderPosts = async (term) => {
                         </div>
                         <div class="read-more">
                             
-                            <a href="/json_details.html?id=${ post.id }">Read more...</a>
+                            <a href="/json_details.html?id=${ post._id }">Read more...</a>
                         </div>
                     </div>
                     
