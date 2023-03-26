@@ -1,5 +1,17 @@
-let article_id = new URLSearchParams(window.location.search).get("id");
+  //Create blog authorization
+  const retrievedData= localStorage.getItem('user');
+  var userData = JSON.parse(retrievedData);
+        // const userType = localStorage.getItem('role_saved')
+         window.addEventListener('DOMContentLoaded', () => {
+            if (userData.role_saved != 'admin'){
+                location.replace('./login_page.html')   
+            }
+            else{
+              console.log("You don't have enough privilege!!");
+            }
 
+         });
+let article_id = new URLSearchParams(window.location.search).get("id");
 var outImage =document.getElementById("imagenFondo");
 var image=new Image();
 var srcData;
@@ -22,9 +34,6 @@ form.title.value = article.title;
 form.category.value = article.category;
 form.body.value = article.content;
 form.imagenFondo.src = article.image
-
-
-
 }
 
 function preview_2(obj)

@@ -1,4 +1,3 @@
-// javascript for index.html
 const container = document.querySelector('.recent_blog');
 const searchForm = document.querySelector('.search');
 const editor_pick = document.querySelector('.ed_leaf_json');

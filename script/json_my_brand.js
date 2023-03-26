@@ -1,21 +1,19 @@
 function cs_send_querry(){
-    const form = document.getElementById('cs_send');
-    const createQuerry = async (e) => {
-        e.preventDefault();
-        const doc = {
-                        first_name: form.fName.value,
-                        last_name: form.lName.value,
-                        email: form.email.value,
-                        message: form.cs_message.value,
-                        
-                    }
-                    await fetch('http://localhost:3000/querries', {
-                        method: 'POST',
-                        body: JSON.stringify(doc),
-                        headers: { 'Content-Type': 'application/json' }
-                    });
-             
-               }
+    const form = document.getElementById('querryForm');
+const createQuerry = async (e) => {
+    e.preventDefault();
     
-    form.addEventListener('submit', createQuerry);
+                const doc = {
+                    firstname: form.fName.value,
+                    lastname: form.lName.value,
+                    email: form.email.value,
+                    message: form.message.value,
+                }
+                await fetch('https://ith-mybrand-backend.onrender.com/save_querries', {
+                    method: 'POST',
+                    body: JSON.stringify(doc),
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                window.history.back()
+}
 } 
