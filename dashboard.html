@@ -752,6 +752,21 @@
     </div>
     <script src="script/json-all-in-table.js"></script>
     <script src="script/json-index.js"></script>
-    
+    <script>
+
+      //Create blog authorization
+  const retrievedData= localStorage.getItem('user');
+  var userData = JSON.parse(retrievedData);
+        // const userType = localStorage.getItem('role_saved')
+         window.addEventListener('DOMContentLoaded', () => {
+            if (userData.role_saved != 'admin'){
+                location.replace('./login_page.html')   
+            }
+            else{
+              console.log("You don't have enough privilege!!");
+            }
+
+         });
+    </script>
   </body>
 </html>

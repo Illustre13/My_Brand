@@ -33,9 +33,7 @@ const renderDetails = async () => {
           <i class="fa-solid fa-square-share-nodes ed"></i>
         </div>
       </div>
-      <div class="back">
-        <button><a href="main_blog.html">Back To Main Blog Page</a></button>
-      </div>
+    
     </div>
     <div class="scrollDown">
       <i
@@ -47,11 +45,3 @@ const renderDetails = async () => {
         `
     container.innerHTML = template;
 }
-deleteBtn.addEventListener('click', async (e) => {
-    e.preventDefault();
-    await fetch(`https://ith-mybrand-backend.onrender.com/delete_blog/${id}`, {
-        method: 'DELETE'
-    });
-    window.location.replace('/dashboard.html');
-})
-window.addEventListener('DOMContentLoaded', () => renderDetails());

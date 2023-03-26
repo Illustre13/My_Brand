@@ -92,4 +92,3 @@ async function deleteBtn(id) {
         });
     
 }
-
